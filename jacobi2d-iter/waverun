@@ -1,0 +1,1 @@
+./charmrun ./jacobi2d 72000 600 10000   +p60  ++nodelist nodes40 +setcpuaffinity +pemap 0-5 +balancer GreedyLB +LBDebug 3 ++server ++server-port $PORT

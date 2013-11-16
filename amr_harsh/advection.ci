@@ -1,0 +1,357 @@
+module PowerLog{
+  group PowerLogger{
+    entry PowerLogger(int);
+  };
+};
+
+
+mainmodule Main{
+	extern module PowerLog;
+
+  readonly CProxy_Main mainProxy;
+  readonly int block_height;
+  readonly int block_width;
+
+  readonly int array_height;
+  readonly int array_width;
+
+  readonly int num_chare_rows;
+  readonly int num_chare_cols;
+        
+  readonly int min_depth;
+  readonly int max_depth;
+
+  readonly int nframe;
+
+  readonly double xctr;
+  readonly double yctr;
+  readonly double radius;
+        
+  readonly double v;
+
+  readonly double ap;
+  readonly double an;
+  readonly double tmax;
+  readonly double dt;
+  readonly double cfl;
+
+  readonly int max_iterations;
+  readonly int refine_frequency;
+
+  initproc TurnManualLBOn();
+  readonly CProxy_PerProcessorChare ppc;
+
+  mainchare Main{
+    entry Main(CkArgMsg *m);
+    entry void printTreeInformation(CkVec<QuadIndex>);
+    entry void terminate();
+    entry void startMeshGeneration();
+    entry void startRunning();
+    entry [reductiontarget] void reportCascadeStats(int cascade_lengths[size], int size);
+    entry [reductiontarget] void qdlatency(double elems[size], int size);
+    entry [reductiontarget] void remeshlatency(double elems[size], int size);
+    entry [reductiontarget] void totalWorkUnits(int total);
+  };
+
+  group AdvMap : CkArrayMap {
+    entry void AdvMap();
+  };
+
+  extern module Advection;
+};
+
+module Advection{
+
+  message InitRefineMsg {
+    bool isInMeshGenerationPhase;
+    double dx;
+    double dy;
+    double myt;
+    double mydt;
+    double refined_u[];
+    bool parent_nbr_exists[];
+    bool parent_nbr_isRefined[];
+    DECISION parent_nbr_decision[];
+  };
+
+  message ChildDataMsg{
+    bool isInMeshGenerationPhase;
+    int childNum;
+    int iterations;
+    double myt;
+    double mydt;
+    double child_u[];
+    bool child_nbr_exists[];
+    bool child_nbr_isRefined[];
+    DECISION child_nbr_decision[];
+  };
+
+
+  group PerProcessorChare{
+    entry PerProcessorChare();
+    entry void collectCascades(CkCallback cb);
+    entry void reduceLatencies();
+    entry void reduceWorkUnits();
+  };
+
+
+  array [QuadIndex] Advection {
+    entry Advection();
+    entry Advection(double, double, double, double);
+    entry Advection(InitRefineMsg*);
+    entry void printState();
+
+    entry void receiveGhosts(int iter, int dir, int width, double u[width], QuadIndex sender, int tag);
+    entry void informParent(int, DECISION, int cascade_length);
+    entry void recvParentDecision(int cascade_length);
+    entry void exchangePhase1Msg(int, DECISION, int cascade_length);
+    entry void done();
+
+    entry void rootTerminated() {};
+    
+    entry void phase1OfMeshGenerationDone();
+    entry [reductiontarget] void meshUpdateReductionClient(int result);
+
+		entry void setstTime()
+		{
+			atomic{
+				stTime=CmiWallTimer();
+			}
+		};
+
+    entry void generateMesh(){
+        atomic "call remeshing for mesh update"{
+            doRemeshing();
+            if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0){
+                ckout << "making refinement decisions" << endl;
+                CkStartQD(CkCallback(CkIndex_Advection::phase1OfMeshGenerationDone(), thisProxy));
+            }
+        }
+        when phase1OfMeshGenerationDone() atomic{
+            updateMesh();
+            if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0){
+                ckout << "now in phase 2 of mesh generation" << endl;
+                CkStartQD(CkCallback(CkIndex_Advection::phase2OfMeshGenerationDone(), thisProxy));
+            }
+        }
+    };
+
+    entry void phase2OfMeshGenerationDone(){
+        atomic{
+            if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0)
+                ckout << "participating in reduction to determine mesh stability" << endl;
+
+            int contri;
+            //if(decision==DEREFINE)
+            //    isRefined=false;
+
+            //ckout << thisIndex.getIndexString().c_str() << " decision: " << decision << endl;
+            if(decision==DEREFINE || decision==REFINE){
+                //ckout << thisIndex.getIndexString().c_str() << " contributing 1, decision = " << decision << endl;
+                contri=1;
+            }
+            else
+                contri=0;
+            contribute(sizeof(int), &contri, CkReduction::sum_int, CkCallback(CkReductionTarget(Advection, meshUpdateReductionClient), thisProxy));
+        }
+        when meshUpdateReductionClient(int result) atomic{
+            if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0)
+                ckout << "nUpdates: " << result << endl;
+            meshGenIterations++;
+            if(result > 0){
+                VB(logFile << "calling generateMesh on myself, iteration " << meshGenIterations << std::endl;);
+                generateMesh();
+            }
+            else{
+                VB(logFile << "mesh generation is over.... start advection now, isRefined = " << isRefined << std::endl;);
+                if(isRefined)
+                    iterations++;//set it to 1
+                phase2Done();
+            }
+        }
+    };
+
+    entry void updateMesh();
+    entry void startRemesh() {
+        atomic "doMeshRestructure" {
+          iterations++;
+          doMeshRestructure();
+          if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0)
+            CkStartQD(CkCallback(CkIndex_Advection::phase1Done(), thisProxy));
+        }
+        when phase1Done() atomic {
+	  double now = CkWallTimer();
+          double localQDLatency = now - lastIdleTimeQD;
+	  double localRemeshLatency = now - remeshStartTime;
+          ppc.ckLocalBranch()->recordQDLatency(iterations, localQDLatency);
+          ppc.ckLocalBranch()->recordRemeshLatency(iterations, localRemeshLatency);
+          if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0) {
+            CkPrintf("%s in phase 2a iteration start QD %d\n", thisIndex.getIndexString().c_str(), iterations);
+            phase2_it++;
+            CkCallback cb;
+            //if ((iterations / refine_frequency) % 50 == 0 || (iterations / refine_frequency) == 3)
+            //if ((iterations / refine_frequency) == 1)
+            if(phase2_it == 1 || phase2_it%10 == 0)
+              cb = CkCallback(CkIndex_Advection::startLdb(), thisProxy);
+            else
+              cb = CkCallback(CkIndex_Advection::phase2Done(), thisProxy);
+            CkStartQD(cb);
+          }
+          doPhase2();
+        }
+    };
+    
+    // Separated for newly created chares from refinement
+    entry  [reductiontarget] void phase2Done() {
+      atomic {
+	CkAssert(usesAutoMeasure == CmiFalse);
+	if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0) {
+	  //CkPrintf("%s in phase 2c iteration %d\n", thisIndex.getIndexString().c_str(), iterations);
+	  ckout << "time for iteration " << iterations - refine_frequency + 1 << " to " << iterations << ": " << CmiWallTimer() - itBeginTime << endl;
+	  itBeginTime = CmiWallTimer();
+	  fflush(stdout);
+	}
+	if (shouldDestroy);
+	//thisProxy[thisIndex].ckDestroy();
+	else {
+	  if (!isRefined) {
+	    thisProxy[thisIndex].doStep();
+	  } 
+	  else {
+	    iterations += refine_frequency - 1;
+	    if (iterations >= max_iterations) {
+	      //ckout << thisIndex.getIndexString().c_str() << " now terminating" << endl;
+	      VB(logFile << thisIndex.getIndexString() << " now terminating" << std::endl;);
+	      if (isRoot())
+		CkStartQD(CkCallback(CkIndex_Main::terminate(), mainProxy));
+	    } else {
+	      if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0) {
+		CkPrintf("%s in short phase 0 iteration %d\n", thisIndex.getIndexString().c_str(), iterations);
+		fflush(stdout);
+	      }
+	      //contribute(CkCallback(CkIndex_Advection::startRemesh(), thisProxy));
+	      startRemesh();
+	    }
+	  }
+	}
+      }
+    };
+    entry void doRemeshing();
+    entry void startLdb();
+    entry void signalExchangeGhostsCompletion();
+
+    entry void doStep(){
+      atomic "begin iteration"{
+        ppc.ckLocalBranch()->incrementWorkUnitCount();
+				if(iterations==100 && CkMyPe()==0) 
+				{
+					CkPrintf("Program Done! avg_it:%f\n",(CmiWallTimer()-stTime)/iterations);
+					CkExit();
+				}
+        if (thisIndex.nbits == min_depth * 2 && thisIndex.bitVector == 0) {
+          ckout  << thisIndex.getIndexString().c_str() << " doStep iteration " << iterations 
+		 << " dt: " << dt << " mydt: " << mydt << " myt " << myt<<"t:"<<(CmiWallTimer()-stTime) << " time/itr:"<<(CmiWallTimer()-stTime)/iterations<< endl;
+        }
+        iterations++;
+        char fname[100];
+
+      sprintf(fname, "out/out_%s_%d", thisIndex.getIndexString().c_str(), iterations);
+      VB(outFile.open(fname););
+      VB(logFile << "************************Begin Iteration " << iterations << " on " << thisIndex.getIndexString() << std::endl;);
+
+			exchangeGhosts();
+    }
+		when signalExchangeGhostsCompletion() atomic "doWork" {
+      compute_and_iterate();
+      iterate();
+    }
+  };
+	
+	entry void doMeshRestructure(){
+		if (!isRefined){
+			atomic "exchange ghosts before remeshing"{
+				exchangeGhosts();
+			}
+			when signalExchangeGhostsCompletion() atomic "do remeshing on leaves"{
+				doRemeshing();
+			}
+		}
+		else {
+			atomic "do remeshing on internal nodes"{
+				doRemeshing();
+			}
+		}
+	};
+
+
+  entry void exchangeGhosts(){
+    atomic "send whatever data you can"{
+			for(int i=0; i<3*NUM_NEIGHBORS; i++)
+				nbr_dataSent[i]=false;
+						
+			hasReceived.clear();
+
+			for(int j=1; j<=block_height; j++){
+				left_edge[j-1] = u[index(1,j)];
+				right_edge[j-1] = u[index(block_width,j)];
+			}
+			for(int i=0; i<NUM_NEIGHBORS; i++){
+				sendGhost(i);
+			}
+			VB(logFile << "Done Sending Ghosts " << thisIndex.getIndexString() << std::endl;);
+    }
+
+    for(imsg = 0; imsg < 4;) {
+    	when receiveGhosts[iterations] (int iter, int dir, int width, double u1[width],
+                                 QuadIndex sender, int tag) atomic "receive ghosts" {
+      	VB(logFile << thisIndex.getIndexString() << " process: " << iter << ", "
+                     << dir << ", " << width << ", " << sender.getIndexString() << ", "
+                     << tag << std::endl;);
+      	process(iter, dir, width, u1);
+      	sendReadyData();
+    	}
+    }
+		atomic "signal exchange ghost completion"{
+			thisProxy[thisIndex].signalExchangeGhostsCompletion();
+		}
+  };
+
+    entry void phase1Done();
+            
+    entry void getGhostsAndRefine(){
+      for(;imsg<4;) {
+        when receiveGhosts[iterations] (int iter, int dir, int width, double u1[width],
+                                        QuadIndex sender, int tag) atomic "save ghosts" {
+          process(iter, dir, width, u1);
+          sendReadyData2RefiningNeighbors();
+          //cout << "In getGHostsAndRefine: " << thisIndex.getIndexString()
+          //<< " received data from " << dir << ", imsg: " << imsg << ", iteration " << iterations << "\n";
+        }
+      }
+      atomic "refine"{
+        //cout << thisIndex.getIndexString() << " now refining\n";
+        refine();
+      }
+    };
+
+    //happens in doPhase2()
+    entry void receiveRefGhosts(int ,int, int width, double u[width]);
+    entry void getAndSendGhost(){
+      atomic{
+        VB(logFile << "getAndSendGhost called" << endl;); 
+      }
+      when receiveRefGhosts[iterations] (int iter, int dir, int width,
+                                         double u1[width]) atomic "interpolate and send"{
+        process(iter, dir, width, u1);
+        sendReadyData2RefiningNeighbors();//interpolateAndSend(dir);
+      }
+    };
+
+    //for LiveViz
+    entry void requestNextFrame(liveVizRequestMsg *m);
+    entry void free_memory();
+    entry void doPhase2();
+    entry void recvChildData(ChildDataMsg*);
+
+  };
+};

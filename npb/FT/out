@@ -1,0 +1,1504 @@
+Converse/Charm++ Commit ID: v6.3.0-679-g5dd8988
+Charm++: Tracemode Projections enabled.
+Warning> Randomization of stack pointer is turned on in kernel.
+Charm++> synchronizing isomalloc memory region...
+[0] consolidated Isomalloc memory region: 0x2bae00000000 - 0x7ffb00000000 (88395776 megs)
+Charm++> scheduler running in netpoll mode.
+CharmLB> Verbose level 1, load balancing period: 0.5 seconds
+CharmLB> Load balancing instrumentation for communication is off.
+WARNING: Running swapglobals without blacklist, globals from libraries might be getting un-necessarily swapped
+Charm++> -swapglobals enabled
+Charm++> cpu affinity enabled. 
+Charm++> cpuaffinity PE-core map : 0-3
+Charm++> Running on 32 unique compute nodes (4-way SMP).
+Charm++> cpu topology info is gathered in 0.031 seconds.
+[0] TempAwareRefineLB created
+
+
+ NAS Parallel Benchmarks 3.3 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                :  256x 256x 128
+ Iterations          :           1000
+ Number of processes :           2048
+ Processor array     :       128x  16
+ Layout type         :             2D
+
+CharmLB> TempAwareRefineLB: PE [0] step 0 starting at 10.638771 Memory: 128.759796 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 10.642100
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=1
+maxPe=66 max=2160193.380117 myAvg=2023313.672580 dMinOverload: 1.090000 dMaxOverload: 1.080000
+dMinOverload: 1.090000 dMaxOverload: 1.080000
+total Objs=2048 MIGS=0 time=8.737771 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 0, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 10.643258 duration 0.001158 s
+CharmLB> TempAwareRefineLB: PE [0] step 0 finished at 10.645804 duration 0.007033 s
+
+ Itr =          10 Itr time=   1.06223893165588       Tot time=   1.48641490936279       outer loop=           1
+ Itr =          20 Itr time=   1.09440302848816       Tot time=   2.58088207244873       outer loop=           1
+ Itr =          30 Itr time=   1.02396297454834       Tot time=   3.60490202903748       outer loop=           1
+ Itr =          40 Itr time=   1.02730011940002       Tot time=   4.63226103782654       outer loop=           1
+ Itr =          50 Itr time=   1.02152514457703       Tot time=   5.65383386611938       outer loop=           1
+ Itr =          60 Itr time=   1.01420283317566       Tot time=   6.66808199882507       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 1 starting at 16.795012 Memory: 129.604492 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 16.798315
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=2
+maxPe=54 max=10656845.630407 myAvg=9874476.944022 dMinOverload: 1.090000 dMaxOverload: 1.090000
+dMinOverload: 1.090000 dMaxOverload: 1.090000
+total Objs=2048 MIGS=0 time=14.893969 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 0, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 16.799231 duration 0.000916 s
+CharmLB> TempAwareRefineLB: PE [0] step 1 finished at 16.801986 duration 0.006974 s
+
+ Itr =          70 Itr time=  0.974434137344360       Tot time=   7.64256596565247       outer loop=           1
+ Itr =          80 Itr time=   1.07841396331787       Tot time=   8.72104096412659       outer loop=           1
+ Itr =          90 Itr time=   1.03148984909058       Tot time=   9.75258898735046       outer loop=           1
+ Itr =         100 Itr time=   1.01963400840759       Tot time=   10.7722809314728       outer loop=           1
+ Itr =         110 Itr time=   1.01948499679565       Tot time=   11.7918250560760       outer loop=           1
+ Itr =         120 Itr time=   1.01790785789490       Tot time=   12.8097920417786       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 2 starting at 22.942418 Memory: 129.703766 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 22.945348
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=3
+maxPe=49 max=10592751.190662 myAvg=9852278.427249 dMinOverload: 1.090000 dMaxOverload: 1.090000
+dMinOverload: 1.090000 dMaxOverload: 1.090000
+total Objs=2048 MIGS=0 time=21.041008 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 0, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 22.946270 duration 0.000922 s
+CharmLB> TempAwareRefineLB: PE [0] step 2 finished at 22.949174 duration 0.006756 s
+
+ Itr =         130 Itr time=  0.979907035827637       Tot time=   13.7897489070892       outer loop=           1
+ Itr =         140 Itr time=   1.09304809570313       Tot time=   14.8828608989716       outer loop=           1
+ Itr =         150 Itr time=   1.02195096015930       Tot time=   15.9048678874969       outer loop=           1
+ Itr =         160 Itr time=   1.02131700515747       Tot time=   16.9262330532074       outer loop=           1
+ Itr =         170 Itr time=   1.02214002609253       Tot time=   17.9484310150146       outer loop=           1
+ Itr =         180 Itr time=   1.02685308456421       Tot time=   18.9753470420837       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 3 starting at 29.101311 Memory: 129.761536 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 29.104369
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=4
+maxPe=74 max=10573792.433739 myAvg=9856872.816104 dMinOverload: 1.090000 dMaxOverload: 1.090000
+dMinOverload: 1.090000 dMaxOverload: 1.090000
+total Objs=2048 MIGS=0 time=27.200077 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 0, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 29.105337 duration 0.000968 s
+CharmLB> TempAwareRefineLB: PE [0] step 3 finished at 29.107998 duration 0.006687 s
+
+ Itr =         190 Itr time=  0.973177909851074       Tot time=   19.9485790729523       outer loop=           1
+ Itr =         200 Itr time=   1.08289718627930       Tot time=   21.0315458774567       outer loop=           1
+ Itr =         210 Itr time=   1.02486705780029       Tot time=   22.0564739704132       outer loop=           1
+ Itr =         220 Itr time=   1.02458190917969       Tot time=   23.0811169147491       outer loop=           1
+ Itr =         230 Itr time=   1.02487993240356       Tot time=   24.1060569286346       outer loop=           1
+ Itr =         240 Itr time=   1.02066111564636       Tot time=   25.1267778873444       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 4 starting at 35.253845 Memory: 129.792297 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 35.257057
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=5
+!!!!! Chip#24 running HOT shifting from 2395000 to 2394000 temp=50.500000
+maxPe=59 max=10586541.429758 myAvg=9858965.007424 dMinOverload: 1.090000 dMaxOverload: 1.090000
+dMinOverload: 1.090000 dMaxOverload: 1.090000
+total Objs=2048 MIGS=0 time=33.352742 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 0, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 35.258171 duration 0.001114 s
+CharmLB> TempAwareRefineLB: PE [0] step 4 finished at 35.260855 duration 0.007010 s
+
+ Itr =         250 Itr time=  0.974605083465576       Tot time=   26.1014370918274       outer loop=           1
+ Itr =         260 Itr time=   1.09146189689636       Tot time=   27.1929590702057       outer loop=           1
+ Itr =         270 Itr time=   1.02569007873535       Tot time=   28.2187058925629       outer loop=           1
+ Itr =         280 Itr time=   1.02238798141479       Tot time=   29.2411630153656       outer loop=           1
+ Itr =         290 Itr time=   1.02101492881775       Tot time=   30.2622358798981       outer loop=           1
+ Itr =         300 Itr time=   1.01714515686035       Tot time=   31.2794420719147       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 5 starting at 41.405588 Memory: 129.916046 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 41.408679
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=6
+!!!!! Chip#25 running HOT shifting from 2395000 to 2394000 temp=49.500000
+maxPe=99 max=11090013.630867 myAvg=9892300.789446 dMinOverload: 1.090000 dMaxOverload: 1.130000
+dMinOverload: 1.090000 dMaxOverload: 1.130000
+total Objs=2048 MIGS=1 time=39.504454 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 1, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 41.410078 duration 0.001399 s
+CharmLB> TempAwareRefineLB: PE [0] step 5 finished at 41.413097 duration 0.007509 s
+
+ Itr =         310 Itr time=  0.974181175231934       Tot time=   32.2536740303040       outer loop=           1
+ Itr =         320 Itr time=   1.13271713256836       Tot time=   33.3864538669586       outer loop=           1
+ Itr =         330 Itr time=   1.03330206871033       Tot time=   34.4198160171509       outer loop=           1
+ Itr =         340 Itr time=   1.03325700759888       Tot time=   35.4531409740448       outer loop=           1
+ Itr =         350 Itr time=   1.03152489662170       Tot time=   36.4847269058228       outer loop=           1
+ Itr =         360 Itr time=   1.03004002571106       Tot time=   37.5148270130157       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 6 starting at 47.648913 Memory: 129.958496 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 47.652144
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=7
+!!!!! Chip#0 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#21 running HOT shifting from 2395000 to 2394000 temp=49.250000
+!!!!! Chip#24 running HOT shifting from 2394000 to 2261000 temp=49.250000
+maxPe=98 max=10475195.199966 myAvg=9383746.589674 dMinOverload: 1.090000 dMaxOverload: 1.120000
+dMinOverload: 1.090000 dMaxOverload: 1.120000
+total Objs=2048 MIGS=4 time=45.747946 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 47.653600 duration 0.001456 s
+CharmLB> TempAwareRefineLB: PE [0] step 6 finished at 47.657108 duration 0.008195 s
+
+ Itr =         370 Itr time=  0.982817888259888       Tot time=   38.4976940155029       outer loop=           1
+ Itr =         380 Itr time=   1.17633223533630       Tot time=   39.6740908622742       outer loop=           1
+ Itr =         390 Itr time=   1.05991387367249       Tot time=   40.7340669631958       outer loop=           1
+ Itr =         400 Itr time=   1.05166316032410       Tot time=   41.7857918739319       outer loop=           1
+ Itr =         410 Itr time=   1.06152701377869       Tot time=   42.8473808765411       outer loop=           1
+ Itr =         420 Itr time=   1.05539703369141       Tot time=   43.9028389453888       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 7 starting at 54.065417 Memory: 129.972778 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 54.069015
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=8
+!!!!! Chip#6 running HOT shifting from 2395000 to 2394000 temp=49.250000
+!!!!! Chip#11 running HOT shifting from 2395000 to 2394000 temp=49.500000
+!!!!! Chip#19 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#24 running HOT shifting from 2261000 to 2128000 temp=49.750000
+!!!!! Chip#26 running HOT shifting from 2395000 to 2394000 temp=49.250000
+!!!!! Chip#30 running HOT shifting from 2395000 to 2394000 temp=49.500000
+!!!!! Chip#31 running HOT shifting from 2395000 to 2394000 temp=49.250000
+maxPe=96 max=9838555.061340 myAvg=8855346.124113 dMinOverload: 1.090000 dMaxOverload: 1.120000
+dMinOverload: 1.090000 dMaxOverload: 1.120000
+total Objs=2048 MIGS=6 time=52.164901 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 54.070372 duration 0.001357 s
+CharmLB> TempAwareRefineLB: PE [0] step 7 finished at 54.073418 duration 0.008001 s
+
+ Itr =         430 Itr time=   1.01110386848450       Tot time=   44.9140040874481       outer loop=           1
+ Itr =         440 Itr time=   1.20458102226257       Tot time=   46.1186480522156       outer loop=           1
+ Itr =         450 Itr time=   1.05669808387756       Tot time=   47.1754078865051       outer loop=           1
+ Itr =         460 Itr time=   1.05982708930969       Tot time=   48.2352960109711       outer loop=           1
+ Itr =         470 Itr time=   1.05879092216492       Tot time=   49.2941429615021       outer loop=           1
+ Itr =         480 Itr time=   1.05554509162903       Tot time=   50.3497500419617       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 8 starting at 60.510281 Memory: 130.243683 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 60.514193
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=9
+!!!!! Chip#0 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#5 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#12 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#20 running HOT shifting from 2395000 to 2394000 temp=49.500000
+!!!!! Chip#23 running HOT shifting from 2395000 to 2394000 temp=50.000000
+!!!!! Chip#24 running HOT shifting from 2128000 to 1995000 temp=49.750000
+maxPe=121 max=11152001.978874 myAvg=10110135.137108 dMinOverload: 1.090000 dMaxOverload: 1.110000
+dMinOverload: 1.090000 dMaxOverload: 1.110000
+total Objs=2048 MIGS=11 time=58.610252 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 11, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 60.515706 duration 0.001513 s
+CharmLB> TempAwareRefineLB: PE [0] step 8 finished at 60.518990 duration 0.008709 s
+
+ Itr =         490 Itr time=   1.00976991653442       Tot time=   51.3595700263977       outer loop=           1
+ Itr =         500 Itr time=   1.19837903976440       Tot time=   52.5580129623413       outer loop=           1
+ Itr =         510 Itr time=   1.06869196891785       Tot time=   53.6267709732056       outer loop=           1
+ Itr =         520 Itr time=   1.07329392433167       Tot time=   54.7001390457153       outer loop=           1
+ Itr =         530 Itr time=   1.07542514801025       Tot time=   55.7756299972534       outer loop=           1
+ Itr =         540 Itr time=   1.07291793823242       Tot time=   56.8486130237579       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 9 starting at 67.031586 Memory: 130.323792 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 67.034791
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=10
+!!!!! Chip#0 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#1 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#2 running HOT shifting from 2395000 to 2394000 temp=49.500000
+!!!!! Chip#3 running HOT shifting from 2395000 to 2394000 temp=50.750000
+!!!!! Chip#8 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#16 running HOT shifting from 2395000 to 2394000 temp=50.000000
+!!!!! Chip#17 running HOT shifting from 2395000 to 2394000 temp=50.250000
+!!!!! Chip#19 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#22 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#24 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#28 running HOT shifting from 2395000 to 2394000 temp=51.000000
+!!!!! Chip#29 running HOT shifting from 2395000 to 2394000 temp=49.750000
+maxPe=3 max=10455018.336296 myAvg=9133894.019341 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=6 time=65.130750 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 67.036580 duration 0.001789 s
+CharmLB> TempAwareRefineLB: PE [0] step 9 finished at 67.041281 duration 0.009695 s
+
+ Itr =         550 Itr time=   1.03220295906067       Tot time=   57.8808798789978       outer loop=           1
+ Itr =         560 Itr time=   1.18250513076782       Tot time=   59.0634539127350       outer loop=           1
+ Itr =         570 Itr time=   1.11105394363403       Tot time=   60.1745779514313       outer loop=           1
+ Itr =         580 Itr time=   1.18876385688782       Tot time=   61.3634188175201       outer loop=           1
+ Itr =         590 Itr time=   1.11890697479248       Tot time=   62.4824178218842       outer loop=           1
+ Itr =         600 Itr time=   1.13865518569946       Tot time=   63.6211347579956       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 10 starting at 74.004627 Memory: 130.658417 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 74.009820
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=11
+!!!!! Chip#10 running HOT shifting from 2395000 to 2394000 temp=49.250000
+!!!!! Chip#13 running HOT shifting from 2395000 to 2394000 temp=50.750000
+!!!!! Chip#17 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#25 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#27 running HOT shifting from 2395000 to 2394000 temp=50.000000
+maxPe=91 max=11821143.832684 myAvg=10542632.736342 dMinOverload: 1.090000 dMaxOverload: 1.130000
+dMinOverload: 1.090000 dMaxOverload: 1.130000
+total Objs=2048 MIGS=4 time=72.105854 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 74.011507 duration 0.001687 s
+CharmLB> TempAwareRefineLB: PE [0] step 10 finished at 74.014420 duration 0.009793 s
+
+ Itr =         610 Itr time=   1.15780997276306       Tot time=   64.7790057659149       outer loop=           1
+ Itr =         620 Itr time=   1.23029184341431       Tot time=   66.0093657970428       outer loop=           1
+ Itr =         630 Itr time=   1.13533186912537       Tot time=   67.1447618007660       outer loop=           1
+ Itr =         640 Itr time=   1.14779400825500       Tot time=   68.2926218509674       outer loop=           1
+ Itr =         650 Itr time=   1.15362811088562       Tot time=   69.4463138580322       outer loop=           1
+ Itr =         660 Itr time=   1.16066193580627       Tot time=   70.6070349216461       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 11 starting at 80.953014 Memory: 130.725281 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 80.957530
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=12
+!!!!! Chip#3 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#9 running HOT shifting from 2395000 to 2394000 temp=50.000000
+!!!!! Chip#11 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#12 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#13 running HOT shifting from 2394000 to 2261000 temp=50.250000
+!!!!! Chip#14 running HOT shifting from 2395000 to 2394000 temp=50.250000
+!!!!! Chip#15 running HOT shifting from 2395000 to 2394000 temp=49.250000
+!!!!! Chip#24 running HOT shifting from 1862000 to 1729000 temp=49.250000
+!!!!! Chip#27 running HOT shifting from 2394000 to 2261000 temp=49.250000
+maxPe=111 max=12373817.523479 myAvg=10256873.637240 dMinOverload: 1.090000 dMaxOverload: 1.210000
+dMinOverload: 1.090000 dMaxOverload: 1.210000
+total Objs=2048 MIGS=14 time=79.053893 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 14, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 80.959834 duration 0.002304 s
+CharmLB> TempAwareRefineLB: PE [0] step 11 finished at 80.963248 duration 0.010234 s
+
+ Itr =         670 Itr time=   1.12054705619812       Tot time=   71.7276368141174       outer loop=           1
+ Itr =         680 Itr time=   1.22294521331787       Tot time=   72.9506599903107       outer loop=           1
+ Itr =         690 Itr time=   1.09620785713196       Tot time=   74.0469348430634       outer loop=           1
+ Itr =         700 Itr time=   1.08538508415222       Tot time=   75.1324057579041       outer loop=           1
+ Itr =         710 Itr time=   1.08600592613220       Tot time=   76.2184758186340       outer loop=           1
+ Itr =         720 Itr time=   1.08099794387817       Tot time=   77.2995629310608       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 12 starting at 87.575709 Memory: 130.792664 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 87.580346
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=13
+!!!!! Chip#0 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#4 running HOT shifting from 2395000 to 2394000 temp=50.500000
+!!!!! Chip#5 running HOT shifting from 2394000 to 2261000 temp=50.000000
+!!!!! Chip#6 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#7 running HOT shifting from 2395000 to 2394000 temp=49.750000
+!!!!! Chip#8 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#9 running HOT shifting from 2394000 to 2261000 temp=50.000000
+!!!!! Chip#11 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#13 running HOT shifting from 2261000 to 2128000 temp=50.000000
+!!!!! Chip#14 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#18 running HOT shifting from 2395000 to 2394000 temp=50.500000
+!!!!! Chip#20 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#21 running HOT shifting from 2394000 to 2261000 temp=50.250000
+!!!!! Chip#23 running HOT shifting from 2394000 to 2261000 temp=49.750000
+!!!!! Chip#25 running HOT shifting from 2261000 to 2128000 temp=50.250000
+!!!!! Chip#28 running HOT shifting from 2394000 to 2261000 temp=49.750000
+!!!!! Chip#30 running HOT shifting from 2394000 to 2261000 temp=50.000000
+!!!!! Chip#31 running HOT shifting from 2394000 to 2261000 temp=50.000000
+maxPe=58 max=13170061.061382 myAvg=10934090.054395 dMinOverload: 1.090000 dMaxOverload: 1.210000
+dMinOverload: 1.090000 dMaxOverload: 1.210000
+total Objs=2048 MIGS=10 time=85.676558 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 10, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 87.583059 duration 0.002713 s
+CharmLB> TempAwareRefineLB: PE [0] step 12 finished at 87.586319 duration 0.010610 s
+
+ Itr =         730 Itr time=   1.16768002510071       Tot time=   78.4673118591309       outer loop=           1
+ Itr =         740 Itr time=   1.18903708457947       Tot time=   79.6564197540283       outer loop=           1
+ Itr =         750 Itr time=   1.14694595336914       Tot time=   80.8034698963165       outer loop=           1
+ Itr =         760 Itr time=   1.14800500869751       Tot time=   81.9515378475189       outer loop=           1
+ Itr =         770 Itr time=   1.13815808296204       Tot time=   83.0897779464722       outer loop=           1
+ Itr =         780 Itr time=   1.12565398216248       Tot time=   84.2155017852783       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 13 starting at 94.541229 Memory: 130.859528 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 94.546228
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=14
+!!!!! Chip#2 running HOT shifting from 2394000 to 2261000 temp=50.250000
+!!!!! Chip#3 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#11 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#19 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#23 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#24 running HOT shifting from 1729000 to 1596000 temp=49.500000
+!!!!! Chip#28 running HOT shifting from 2261000 to 2128000 temp=49.750000
+!!!!! Chip#29 running HOT shifting from 2394000 to 2261000 temp=50.000000
+!!!!! Chip#31 running HOT shifting from 2261000 to 2128000 temp=49.250000
+maxPe=47 max=12030163.646698 myAvg=9934886.028109 dMinOverload: 1.090000 dMaxOverload: 1.220000
+dMinOverload: 1.090000 dMaxOverload: 1.220000
+total Objs=2048 MIGS=9 time=92.642404 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 9, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 94.548406 duration 0.002178 s
+CharmLB> TempAwareRefineLB: PE [0] step 13 finished at 94.551961 duration 0.010732 s
+
+ Itr =         790 Itr time=   1.10122299194336       Tot time=   85.3168079853058       outer loop=           1
+ Itr =         800 Itr time=   1.25238895416260       Tot time=   86.5692617893219       outer loop=           1
+ Itr =         810 Itr time=   1.13915205001831       Tot time=   87.7084968090057       outer loop=           1
+ Itr =         820 Itr time=   1.15822601318359       Tot time=   88.8668167591095       outer loop=           1
+ Itr =         830 Itr time=   1.12168097496033       Tot time=   89.9885578155518       outer loop=           1
+ Itr =         840 Itr time=   1.15841507911682       Tot time=   91.1470518112183       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 14 starting at 101.486371 Memory: 130.955872 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 101.491095
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=15
+!!!!! Chip#0 running HOT shifting from 1995000 to 1862000 temp=49.500000
+!!!!! Chip#2 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#5 running HOT shifting from 2261000 to 2128000 temp=50.000000
+!!!!! Chip#6 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#8 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#21 running HOT shifting from 2261000 to 2128000 temp=50.000000
+!!!!! Chip#22 running HOT shifting from 2394000 to 2261000 temp=50.250000
+!!!!! Chip#25 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#26 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#30 running HOT shifting from 2261000 to 2128000 temp=49.250000
+maxPe=85 max=12571186.284781 myAvg=10937174.831761 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=10 time=99.587326 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 10, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 101.493701 duration 0.002606 s
+CharmLB> TempAwareRefineLB: PE [0] step 14 finished at 101.496692 duration 0.010321 s
+
+ Itr =         850 Itr time=   1.11472916603088       Tot time=   92.2618448734283       outer loop=           1
+ Itr =         860 Itr time=   1.27045989036560       Tot time=   93.5323779582977       outer loop=           1
+ Itr =         870 Itr time=   1.14061284065247       Tot time=   94.6730837821960       outer loop=           1
+ Itr =         880 Itr time=   1.17228889465332       Tot time=   95.8454408645630       outer loop=           1
+ Itr =         890 Itr time=   1.13337588310242       Tot time=   96.9788827896118       outer loop=           1
+ Itr =         900 Itr time=   1.14118289947510       Tot time=   98.1201388835907       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 15 starting at 108.483135 Memory: 130.994080 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 108.488736
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=16
+!!!!! Chip#1 running HOT shifting from 2394000 to 2261000 temp=49.750000
+!!!!! Chip#16 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#18 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#19 running HOT shifting from 2128000 to 1995000 temp=49.500000
+!!!!! Chip#21 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#26 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#29 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#31 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=75 max=13901256.902218 myAvg=11948492.322937 dMinOverload: 1.090000 dMaxOverload: 1.170000
+dMinOverload: 1.090000 dMaxOverload: 1.170000
+total Objs=2048 MIGS=8 time=106.584990 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 108.490923 duration 0.002187 s
+CharmLB> TempAwareRefineLB: PE [0] step 15 finished at 108.493823 duration 0.010688 s
+
+ Itr =         910 Itr time=   1.14450597763062       Tot time=   99.2647237777710       outer loop=           1
+ Itr =         920 Itr time=   1.26866197586060       Tot time=   100.533471822739       outer loop=           1
+ Itr =         930 Itr time=   1.18716907501221       Tot time=   101.720731973648       outer loop=           1
+ Itr =         940 Itr time=   1.14689302444458       Tot time=   102.867726802826       outer loop=           1
+ Itr =         950 Itr time=   1.18283009529114       Tot time=   104.050749778748       outer loop=           1
+ Itr =         960 Itr time=   1.16917681694031       Tot time=   105.220011949539       outer loop=           1
+
+CharmLB> TempAwareRefineLB: PE [0] step 16 starting at 115.582006 Memory: 131.061127 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 115.587467
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=17
+!!!!! Chip#4 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#17 running HOT shifting from 2261000 to 2128000 temp=49.750000
+!!!!! Chip#20 running HOT shifting from 2261000 to 2128000 temp=49.750000
+!!!!! Chip#22 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#23 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#25 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=94 max=12595284.271240 myAvg=10832927.999430 dMinOverload: 1.090000 dMaxOverload: 1.170000
+dMinOverload: 1.090000 dMaxOverload: 1.170000
+total Objs=2048 MIGS=19 time=113.684007 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 19, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 115.589813 duration 0.002346 s
+CharmLB> TempAwareRefineLB: PE [0] step 16 finished at 115.593654 duration 0.011648 s
+
+ Itr =         970 Itr time=   1.14066982269287       Tot time=   106.360748767853       outer loop=           1
+ Itr =         980 Itr time=   1.29977607727051       Tot time=   107.660606861115       outer loop=           1
+ Itr =         990 Itr time=   1.16882491111755       Tot time=   108.829510927200       outer loop=           1
+ Itr =        1000 Itr time=   1.18772315979004       Tot time=   110.017313957214       outer loop=           1
+ class = U
+
+CharmLB> TempAwareRefineLB: PE [0] step 17 starting at 120.627607 Memory: 131.140320 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 120.632238
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=18
+!!!!! Chip#2 running COLD shifting from 2128000 to 2261000 temp=44.750000
+!!!!! Chip#4 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#27 running HOT shifting from 2261000 to 2128000 temp=50.000000
+maxPe=103 max=8038946.819782 myAvg=7043145.405537 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=9 time=118.728510 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 9, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 120.634053 duration 0.001815 s
+CharmLB> TempAwareRefineLB: PE [0] step 17 finished at 120.637482 duration 0.009875 s
+
+ Itr =          10 Itr time=   1.25735306739807       Tot time=   111.403754949570       outer loop=           2
+ Itr =          20 Itr time=   1.29731988906860       Tot time=   112.701156854630       outer loop=           2
+ Itr =          30 Itr time=   1.16178297996521       Tot time=   113.863016843796       outer loop=           2
+ Itr =          40 Itr time=   1.18109798431396       Tot time=   115.044184923172       outer loop=           2
+ Itr =          50 Itr time=   1.16366195678711       Tot time=   116.207915782928       outer loop=           2
+ Itr =          60 Itr time=   1.16588306427002       Tot time=   117.373864889145       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 18 starting at 127.738121 Memory: 131.206238 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 127.743852
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=19
+!!!!! Chip#1 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#24 running HOT shifting from 1596000 to 1463000 temp=49.250000
+!!!!! Chip#28 running HOT shifting from 2128000 to 1995000 temp=49.750000
+maxPe=115 max=12036232.624054 myAvg=10058726.755408 dMinOverload: 1.090000 dMaxOverload: 1.200000
+dMinOverload: 1.090000 dMaxOverload: 1.200000
+total Objs=2048 MIGS=33 time=125.840962 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 33, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 127.746514 duration 0.002662 s
+CharmLB> TempAwareRefineLB: PE [0] step 18 finished at 127.749894 duration 0.011773 s
+
+ Itr =          70 Itr time=   1.14231014251709       Tot time=   118.516257762909       outer loop=           2
+ Itr =          80 Itr time=   1.36657500267029       Tot time=   119.882911920547       outer loop=           2
+ Itr =          90 Itr time=   1.16507911682129       Tot time=   121.048061847687       outer loop=           2
+ Itr =         100 Itr time=   1.18063092231750       Tot time=   122.228767871857       outer loop=           2
+ Itr =         110 Itr time=   1.19782900810242       Tot time=   123.426669836044       outer loop=           2
+ Itr =         120 Itr time=   1.17013502120972       Tot time=   124.596868753433       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 19 starting at 134.955771 Memory: 131.274353 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 134.960486
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=20
+!!!!! Chip#6 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#9 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#20 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#25 running COLD shifting from 1862000 to 1995000 temp=46.750000
+!!!!! Chip#30 running HOT shifting from 2128000 to 1995000 temp=49.500000
+maxPe=112 max=12334483.959675 myAvg=10290715.959738 dMinOverload: 1.090000 dMaxOverload: 1.200000
+dMinOverload: 1.090000 dMaxOverload: 1.200000
+total Objs=2048 MIGS=17 time=133.057007 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 17, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 134.962775 duration 0.002289 s
+CharmLB> TempAwareRefineLB: PE [0] step 19 finished at 134.966014 duration 0.010243 s
+
+ Itr =         130 Itr time=   1.13527798652649       Tot time=   125.732207775116       outer loop=           2
+ Itr =         140 Itr time=   1.33484196662903       Tot time=   127.067133903503       outer loop=           2
+ Itr =         150 Itr time=   1.17508292198181       Tot time=   128.242283821106       outer loop=           2
+ Itr =         160 Itr time=   1.17525100708008       Tot time=   129.417601823807       outer loop=           2
+ Itr =         170 Itr time=   1.19480705261230       Tot time=   130.612497806549       outer loop=           2
+ Itr =         180 Itr time=   1.17857599258423       Tot time=   131.791141986847       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 20 starting at 142.164003 Memory: 131.341949 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 142.169888
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=21
+!!!!! Chip#1 running COLD shifting from 2128000 to 2261000 temp=46.750000
+!!!!! Chip#2 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#6 running COLD shifting from 1995000 to 2128000 temp=46.750000
+!!!!! Chip#7 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#15 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#17 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#29 running HOT shifting from 2128000 to 1995000 temp=49.500000
+maxPe=116 max=11816649.494171 myAvg=10379112.273682 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=10 time=140.266150 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 10, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 142.172002 duration 0.002114 s
+CharmLB> TempAwareRefineLB: PE [0] step 20 finished at 142.175496 duration 0.011493 s
+
+ Itr =         190 Itr time=   1.15061497688293       Tot time=   132.941822767258       outer loop=           2
+ Itr =         200 Itr time=   1.30153203010559       Tot time=   134.243426799774       outer loop=           2
+ Itr =         210 Itr time=   1.16916894912720       Tot time=   135.412683963776       outer loop=           2
+ Itr =         220 Itr time=   1.16140389442444       Tot time=   136.574153900146       outer loop=           2
+ Itr =         230 Itr time=   1.17224788665771       Tot time=   137.746469974518       outer loop=           2
+ Itr =         240 Itr time=   1.17383503913879       Tot time=   138.920384883881       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 21 starting at 149.291011 Memory: 131.410004 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 149.296925
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=22
+!!!!! Chip#8 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#12 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#18 running HOT shifting from 2261000 to 2128000 temp=49.500000
+maxPe=75 max=12892801.813364 myAvg=11207337.401474 dMinOverload: 1.090000 dMaxOverload: 1.160000
+dMinOverload: 1.090000 dMaxOverload: 1.160000
+total Objs=2048 MIGS=7 time=147.393086 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 7, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 149.298620 duration 0.001695 s
+CharmLB> TempAwareRefineLB: PE [0] step 21 finished at 149.302004 duration 0.010993 s
+
+ Itr =         250 Itr time=   1.14763379096985       Tot time=   140.068081855774       outer loop=           2
+ Itr =         260 Itr time=   1.28033804893494       Tot time=   141.348499774933       outer loop=           2
+ Itr =         270 Itr time=   1.16913509368896       Tot time=   142.517745971680       outer loop=           2
+ Itr =         280 Itr time=   1.17519402503967       Tot time=   143.693000793457       outer loop=           2
+ Itr =         290 Itr time=   1.17874908447266       Tot time=   144.871839761734       outer loop=           2
+ Itr =         300 Itr time=   1.18098998069763       Tot time=   146.052895784378       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 22 starting at 156.411769 Memory: 131.476501 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 156.416607
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=23
+!!!!! Chip#1 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#14 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#22 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=91 max=11803045.284271 myAvg=10589440.048887 dMinOverload: 1.090000 dMaxOverload: 1.120000
+dMinOverload: 1.090000 dMaxOverload: 1.120000
+total Objs=2048 MIGS=8 time=154.512780 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 156.418378 duration 0.001771 s
+CharmLB> TempAwareRefineLB: PE [0] step 22 finished at 156.421389 duration 0.009620 s
+
+ Itr =         310 Itr time=   1.13476085662842       Tot time=   147.187733888626       outer loop=           2
+ Itr =         320 Itr time=   1.31088590621948       Tot time=   148.498687982559       outer loop=           2
+ Itr =         330 Itr time=   1.18106889724731       Tot time=   149.679826974869       outer loop=           2
+ Itr =         340 Itr time=   1.18092489242554       Tot time=   150.860822916031       outer loop=           2
+ Itr =         350 Itr time=   1.16288900375366       Tot time=   152.023798942566       outer loop=           2
+ Itr =         360 Itr time=   1.17026710510254       Tot time=   153.194136857986       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 23 starting at 163.556056 Memory: 131.545715 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 163.561462
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=24
+!!!!! Chip#16 running HOT shifting from 2261000 to 2128000 temp=49.250000
+maxPe=90 max=12049993.035793 myAvg=10582120.258931 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=9 time=161.657694 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 9, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 163.563087 duration 0.001625 s
+CharmLB> TempAwareRefineLB: PE [0] step 23 finished at 163.566306 duration 0.010250 s
+
+ Itr =         370 Itr time=   1.13833117485046       Tot time=   154.332528829575       outer loop=           2
+ Itr =         380 Itr time=   1.29120993614197       Tot time=   155.623804807663       outer loop=           2
+ Itr =         390 Itr time=   1.15883398056030       Tot time=   156.782724857330       outer loop=           2
+ Itr =         400 Itr time=   1.17962002754211       Tot time=   157.962408781052       outer loop=           2
+ Itr =         410 Itr time=   1.18255186080933       Tot time=   159.145035982132       outer loop=           2
+ Itr =         420 Itr time=   1.15457105636597       Tot time=   160.299688816071       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 24 starting at 170.655887 Memory: 131.611267 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 170.660650
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=25
+!!!!! Chip#18 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#19 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=79 max=11306089.861393 myAvg=9948332.256634 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=8 time=168.756822 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 170.662342 duration 0.001692 s
+CharmLB> TempAwareRefineLB: PE [0] step 24 finished at 170.665682 duration 0.009795 s
+
+ Itr =         430 Itr time=   1.13211321830750       Tot time=   161.431872844696       outer loop=           2
+ Itr =         440 Itr time=   1.30154585838318       Tot time=   162.733484983444       outer loop=           2
+ Itr =         450 Itr time=   1.17308306694031       Tot time=   163.906632900238       outer loop=           2
+ Itr =         460 Itr time=   1.16466498374939       Tot time=   165.071373939514       outer loop=           2
+ Itr =         470 Itr time=   1.15654611587524       Tot time=   166.227985858917       outer loop=           2
+ Itr =         480 Itr time=   1.16308093070984       Tot time=   167.391144990921       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 25 starting at 177.744950 Memory: 131.678558 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 177.750706
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=26
+!!!!! Chip#0 running HOT shifting from 1862000 to 1729000 temp=49.750000
+!!!!! Chip#10 running HOT shifting from 2394000 to 2261000 temp=49.250000
+!!!!! Chip#13 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#21 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#25 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#31 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=127 max=11726359.852552 myAvg=10059360.780007 dMinOverload: 1.090000 dMaxOverload: 1.170000
+dMinOverload: 1.090000 dMaxOverload: 1.170000
+total Objs=2048 MIGS=12 time=175.846956 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 12, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 177.752743 duration 0.002037 s
+CharmLB> TempAwareRefineLB: PE [0] step 25 finished at 177.755796 duration 0.010846 s
+
+ Itr =         490 Itr time=   1.13069701194763       Tot time=   168.521905899048       outer loop=           2
+ Itr =         500 Itr time=   1.34994506835938       Tot time=   169.871906757355       outer loop=           2
+ Itr =         510 Itr time=   1.25896501541138       Tot time=   171.130941867828       outer loop=           2
+ Itr =         520 Itr time=   1.25110292434692       Tot time=   172.382121801376       outer loop=           2
+ Itr =         530 Itr time=   1.23762297630310       Tot time=   173.619826793671       outer loop=           2
+ Itr =         540 Itr time=   1.24221897125244       Tot time=   174.862108945847       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 26 starting at 185.316875 Memory: 131.745758 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 185.321839
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=27
+!!!!! Chip#3 running COLD shifting from 2128000 to 2261000 temp=45.750000
+!!!!! Chip#12 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=84 max=11876056.231022 myAvg=10099461.564695 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=12 time=183.418196 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 12, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 185.323747 duration 0.001908 s
+CharmLB> TempAwareRefineLB: PE [0] step 26 finished at 185.327028 duration 0.010153 s
+
+ Itr =         550 Itr time=   1.33901309967041       Tot time=   176.201194763184       outer loop=           2
+ Itr =         560 Itr time=   1.23241591453552       Tot time=   177.433687925339       outer loop=           2
+ Itr =         570 Itr time=   1.23943495750427       Tot time=   178.673194885254       outer loop=           2
+ Itr =         580 Itr time=   1.20516300201416       Tot time=   179.878424882889       outer loop=           2
+ Itr =         590 Itr time=   1.18584895133972       Tot time=   181.064353942871       outer loop=           2
+ Itr =         600 Itr time=   1.21518015861511       Tot time=   182.279596805573       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 27 starting at 192.686630 Memory: 131.812805 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 192.691683
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=28
+!!!!! Chip#26 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#27 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=64 max=13791742.923737 myAvg=11723442.224452 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=13 time=190.788046 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 13, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 192.693517 duration 0.001834 s
+CharmLB> TempAwareRefineLB: PE [0] step 27 finished at 192.697374 duration 0.010744 s
+
+ Itr =         610 Itr time=   1.18888306617737       Tot time=   183.468550920486       outer loop=           2
+ Itr =         620 Itr time=   1.35041999816895       Tot time=   184.819059848785       outer loop=           2
+ Itr =         630 Itr time=   1.22433400154114       Tot time=   186.043472766876       outer loop=           2
+ Itr =         640 Itr time=   1.22475695610046       Tot time=   187.268299818039       outer loop=           2
+ Itr =         650 Itr time=   1.20774316787720       Tot time=   188.476123809814       outer loop=           2
+ Itr =         660 Itr time=   1.22937512397766       Tot time=   189.705557823181       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 28 starting at 200.127344 Memory: 131.879944 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 200.132255
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=29
+!!!!! Chip#2 running COLD shifting from 2128000 to 2261000 temp=46.000000
+!!!!! Chip#4 running COLD shifting from 2128000 to 2261000 temp=46.750000
+!!!!! Chip#10 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#11 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#19 running COLD shifting from 1862000 to 1995000 temp=46.500000
+maxPe=61 max=14591806.145191 myAvg=12671082.539697 dMinOverload: 1.090000 dMaxOverload: 1.160000
+dMinOverload: 1.090000 dMaxOverload: 1.160000
+total Objs=2048 MIGS=19 time=198.228813 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 19, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 200.134543 duration 0.002288 s
+CharmLB> TempAwareRefineLB: PE [0] step 28 finished at 200.138387 duration 0.011043 s
+
+ Itr =         670 Itr time=   1.19984102249146       Tot time=   190.905476808548       outer loop=           2
+ Itr =         680 Itr time=   1.45047211647034       Tot time=   192.356022834778       outer loop=           2
+ Itr =         690 Itr time=   1.25343489646912       Tot time=   193.609526872635       outer loop=           2
+ Itr =         700 Itr time=   1.19070005416870       Tot time=   194.800306797028       outer loop=           2
+ Itr =         710 Itr time=   1.30962991714478       Tot time=   196.109996795654       outer loop=           2
+ Itr =         720 Itr time=   1.28121089935303       Tot time=   197.391274929047       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 29 starting at 207.852297 Memory: 131.947571 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 207.858558
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=30
+!!!!! Chip#24 running HOT shifting from 1463000 to 1330000 temp=49.250000
+maxPe=67 max=15064162.220001 myAvg=12085852.318401 dMinOverload: 1.090000 dMaxOverload: 1.250000
+dMinOverload: 1.090000 dMaxOverload: 1.250000
+total Objs=2048 MIGS=23 time=205.955255 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 23, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 207.860648 duration 0.002090 s
+CharmLB> TempAwareRefineLB: PE [0] step 29 finished at 207.863942 duration 0.011645 s
+
+ Itr =         730 Itr time=   1.23957395553589       Tot time=   198.630910873413       outer loop=           2
+ Itr =         740 Itr time=   1.38336491584778       Tot time=   200.014344930649       outer loop=           2
+ Itr =         750 Itr time=   1.23506879806519       Tot time=   201.249481916428       outer loop=           2
+ Itr =         760 Itr time=   1.23312306404114       Tot time=   202.482680797577       outer loop=           2
+ Itr =         770 Itr time=   1.22856688499451       Tot time=   203.711347818375       outer loop=           2
+ Itr =         780 Itr time=   1.23266315460205       Tot time=   204.944081783295       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 30 starting at 215.353676 Memory: 132.015717 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 215.358802
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=31
+!!!!! Chip#2 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#3 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#7 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#9 running HOT shifting from 2128000 to 1995000 temp=49.750000
+!!!!! Chip#20 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=81 max=13693298.220634 myAvg=10882588.622289 dMinOverload: 1.090000 dMaxOverload: 1.260000
+dMinOverload: 1.090000 dMaxOverload: 1.260000
+total Objs=2048 MIGS=15 time=213.455217 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 15, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 215.360946 duration 0.002144 s
+CharmLB> TempAwareRefineLB: PE [0] step 30 finished at 215.364161 duration 0.010485 s
+
+ Itr =         790 Itr time=   1.18710184097290       Tot time=   206.131328821182       outer loop=           2
+ Itr =         800 Itr time=   1.39700984954834       Tot time=   207.528411865234       outer loop=           2
+ Itr =         810 Itr time=   1.26317214965820       Tot time=   208.791664838791       outer loop=           2
+ Itr =         820 Itr time=   1.24485611915588       Tot time=   210.036593914032       outer loop=           2
+ Itr =         830 Itr time=   1.28204393386841       Tot time=   211.318715810776       outer loop=           2
+ Itr =         840 Itr time=   1.25030112266541       Tot time=   212.569084882736       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 31 starting at 222.999998 Memory: 132.082123 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 223.005029
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=32
+!!!!! Chip#9 running HOT shifting from 1995000 to 1862000 temp=49.500000
+!!!!! Chip#28 running HOT shifting from 1995000 to 1862000 temp=49.500000
+maxPe=39 max=13316173.993349 myAvg=10966393.053623 dMinOverload: 1.090000 dMaxOverload: 1.220000
+dMinOverload: 1.090000 dMaxOverload: 1.220000
+total Objs=2048 MIGS=20 time=221.101654 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 20, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 223.007228 duration 0.002199 s
+CharmLB> TempAwareRefineLB: PE [0] step 31 finished at 223.010701 duration 0.010703 s
+
+ Itr =         850 Itr time=   1.20875096321106       Tot time=   213.777907848358       outer loop=           2
+ Itr =         860 Itr time=   1.42435503005981       Tot time=   215.202339887619       outer loop=           2
+ Itr =         870 Itr time=   1.25631284713745       Tot time=   216.458722829819       outer loop=           2
+ Itr =         880 Itr time=   1.26997208595276       Tot time=   217.728780984879       outer loop=           2
+ Itr =         890 Itr time=   1.27802085876465       Tot time=   219.006879806519       outer loop=           2
+ Itr =         900 Itr time=   1.25286102294922       Tot time=   220.259808778763       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 32 starting at 230.723173 Memory: 132.149506 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 230.732524
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=33
+!!!!! Chip#4 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#5 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#18 running COLD shifting from 1995000 to 2128000 temp=46.750000
+!!!!! Chip#23 running HOT shifting from 1995000 to 1862000 temp=49.500000
+!!!!! Chip#30 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=38 max=13184244.163036 myAvg=11225420.055884 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=13 time=228.829036 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 13, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 230.734741 duration 0.002217 s
+CharmLB> TempAwareRefineLB: PE [0] step 32 finished at 230.738189 duration 0.015016 s
+
+ Itr =         910 Itr time=   1.35167098045349       Tot time=   221.611544847488       outer loop=           2
+ Itr =         920 Itr time=   1.30029487609863       Tot time=   222.911917924881       outer loop=           2
+ Itr =         930 Itr time=   1.26258993148804       Tot time=   224.174610853195       outer loop=           2
+ Itr =         940 Itr time=   1.33025312423706       Tot time=   225.504958868027       outer loop=           2
+ Itr =         950 Itr time=   1.26216101646423       Tot time=   226.767206907272       outer loop=           2
+ Itr =         960 Itr time=   1.25030994415283       Tot time=   228.017600774765       outer loop=           2
+
+CharmLB> TempAwareRefineLB: PE [0] step 33 starting at 238.479441 Memory: 132.216766 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 238.488019
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=34
+!!!!! Chip#24 running HOT shifting from 1330000 to 1197000 temp=49.250000
+maxPe=98 max=9090097.553730 myAvg=7327466.609681 dMinOverload: 1.090000 dMaxOverload: 1.250000
+dMinOverload: 1.090000 dMaxOverload: 1.250000
+total Objs=2048 MIGS=14 time=236.584420 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 14, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 238.489811 duration 0.001792 s
+CharmLB> TempAwareRefineLB: PE [0] step 33 finished at 238.493548 duration 0.014107 s
+
+ Itr =         970 Itr time=   1.24617910385132       Tot time=   229.263845920563       outer loop=           2
+ Itr =         980 Itr time=   1.46425890922546       Tot time=   230.728176832199       outer loop=           2
+ Itr =         990 Itr time=   1.35990810394287       Tot time=   232.088159799576       outer loop=           2
+ Itr =        1000 Itr time=   1.34441208839417       Tot time=   233.432669878006       outer loop=           2
+ class = U
+
+CharmLB> TempAwareRefineLB: PE [0] step 34 starting at 244.160629 Memory: 132.285828 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 244.166805
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=35
+!!!!! Chip#4 running COLD shifting from 2128000 to 2261000 temp=46.750000
+maxPe=113 max=8863615.858078 myAvg=7801139.712484 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=5 time=242.262977 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 5, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 244.168420 duration 0.001615 s
+CharmLB> TempAwareRefineLB: PE [0] step 34 finished at 244.175278 duration 0.014649 s
+
+ Itr =          10 Itr time=   1.37194204330444       Tot time=   234.942930936813       outer loop=           3
+ Itr =          20 Itr time=   1.44608807563782       Tot time=   236.389101982117       outer loop=           3
+ Itr =          30 Itr time=   1.21791005134583       Tot time=   237.607091903687       outer loop=           3
+ Itr =          40 Itr time=   1.22558283805847       Tot time=   238.832751989365       outer loop=           3
+ Itr =          50 Itr time=   1.21865296363831       Tot time=   240.051476955414       outer loop=           3
+ Itr =          60 Itr time=   1.22337007522583       Tot time=   241.274915933609       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 35 starting at 251.722202 Memory: 132.377045 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 251.728153
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=36
+!!!!! Chip#4 running COLD shifting from 2261000 to 2394000 temp=45.000000
+!!!!! Chip#7 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#26 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=106 max=12747303.922176 myAvg=10537205.523143 dMinOverload: 1.090000 dMaxOverload: 1.210000
+dMinOverload: 1.090000 dMaxOverload: 1.210000
+total Objs=2048 MIGS=23 time=249.824848 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 23, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 251.730404 duration 0.002251 s
+CharmLB> TempAwareRefineLB: PE [0] step 35 finished at 251.733832 duration 0.011630 s
+
+ Itr =          70 Itr time=   1.23120379447937       Tot time=   242.506189823151       outer loop=           3
+ Itr =          80 Itr time=   1.49338483810425       Tot time=   243.999649763107       outer loop=           3
+ Itr =          90 Itr time=   1.25169920921326       Tot time=   245.251419782639       outer loop=           3
+ Itr =         100 Itr time=   1.22530913352966       Tot time=   246.476923942566       outer loop=           3
+ Itr =         110 Itr time=   1.23091006278992       Tot time=   247.707907915115       outer loop=           3
+ Itr =         120 Itr time=   1.23310995101929       Tot time=   248.941113948822       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 36 starting at 259.362154 Memory: 132.442719 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 259.368433
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=37
+!!!!! Chip#15 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#19 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=76 max=12147193.958759 myAvg=10639837.120560 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=15 time=257.464881 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 15, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 259.370350 duration 0.001917 s
+CharmLB> TempAwareRefineLB: PE [0] step 36 finished at 259.373787 duration 0.011633 s
+
+ Itr =         130 Itr time=   1.20085906982422       Tot time=   250.142042875290       outer loop=           3
+ Itr =         140 Itr time=   1.43502616882324       Tot time=   251.577140808105       outer loop=           3
+ Itr =         150 Itr time=   1.27022600173950       Tot time=   252.847467899323       outer loop=           3
+ Itr =         160 Itr time=   1.27260494232178       Tot time=   254.120142936707       outer loop=           3
+ Itr =         170 Itr time=   1.27141284942627       Tot time=   255.391638755798       outer loop=           3
+ Itr =         180 Itr time=   1.26140093803406       Tot time=   256.653109788895       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 37 starting at 267.123301 Memory: 132.510162 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 267.128327
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=38
+!!!!! Chip#4 running HOT shifting from 2394000 to 2261000 temp=50.000000
+!!!!! Chip#12 running COLD shifting from 1995000 to 2128000 temp=46.750000
+!!!!! Chip#30 running COLD shifting from 1862000 to 1995000 temp=44.750000
+maxPe=77 max=11911999.904156 myAvg=10585534.222410 dMinOverload: 1.090000 dMaxOverload: 1.130000
+dMinOverload: 1.090000 dMaxOverload: 1.130000
+total Objs=2048 MIGS=9 time=265.224680 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 9, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 267.130222 duration 0.001895 s
+CharmLB> TempAwareRefineLB: PE [0] step 37 finished at 267.133632 duration 0.010331 s
+
+ Itr =         190 Itr time=   1.25126099586487       Tot time=   257.904458761215       outer loop=           3
+ Itr =         200 Itr time=   1.40830302238464       Tot time=   259.312837839127       outer loop=           3
+ Itr =         210 Itr time=   1.26587295532227       Tot time=   260.578781843185       outer loop=           3
+ Itr =         220 Itr time=   1.25697493553162       Tot time=   261.835833787918       outer loop=           3
+ Itr =         230 Itr time=   1.27316904067993       Tot time=   263.109073877335       outer loop=           3
+ Itr =         240 Itr time=   1.27635908126831       Tot time=   264.385503768921       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 38 starting at 274.826008 Memory: 132.578888 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 274.831161
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=39
+!!!!! Chip#4 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#17 running HOT shifting from 1995000 to 1862000 temp=49.500000
+maxPe=71 max=12030932.511091 myAvg=10591852.197665 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=4 time=272.927291 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 274.832752 duration 0.001591 s
+CharmLB> TempAwareRefineLB: PE [0] step 38 finished at 274.836287 duration 0.010279 s
+
+ Itr =         250 Itr time=   1.21746587753296       Tot time=   265.603051900864       outer loop=           3
+ Itr =         260 Itr time=   1.40506792068481       Tot time=   267.008211851120       outer loop=           3
+ Itr =         270 Itr time=   1.22960495948792       Tot time=   268.237891912460       outer loop=           3
+ Itr =         280 Itr time=   1.26131606101990       Tot time=   269.499278783798       outer loop=           3
+ Itr =         290 Itr time=   1.27074217796326       Tot time=   270.770091772079       outer loop=           3
+ Itr =         300 Itr time=   1.23647499084473       Tot time=   272.006647825241       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 39 starting at 282.452394 Memory: 132.644501 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 282.458981
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=40
+!!!!! Chip#6 running HOT shifting from 2128000 to 1995000 temp=49.500000
+!!!!! Chip#8 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=33 max=12011476.249695 myAvg=10689300.252565 dMinOverload: 1.090000 dMaxOverload: 1.130000
+dMinOverload: 1.090000 dMaxOverload: 1.130000
+total Objs=2048 MIGS=4 time=280.555104 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 282.460564 duration 0.001583 s
+CharmLB> TempAwareRefineLB: PE [0] step 39 finished at 282.464164 duration 0.011770 s
+
+ Itr =         310 Itr time=   1.22439193725586       Tot time=   273.231121778488       outer loop=           3
+ Itr =         320 Itr time=   1.33835816383362       Tot time=   274.569561958313       outer loop=           3
+ Itr =         330 Itr time=   1.25911903381348       Tot time=   275.828750848770       outer loop=           3
+ Itr =         340 Itr time=   1.27286195755005       Tot time=   277.101708889008       outer loop=           3
+ Itr =         350 Itr time=   1.27615499496460       Tot time=   278.377935886383       outer loop=           3
+ Itr =         360 Itr time=   1.24822092056274       Tot time=   279.626215934753       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 40 starting at 290.084397 Memory: 132.711517 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 290.090552
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=41
+!!!!! Chip#5 running COLD shifting from 1995000 to 2128000 temp=46.500000
+maxPe=61 max=13809930.576324 myAvg=12162816.565431 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=5 time=288.186688 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 5, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 290.092116 duration 0.001564 s
+CharmLB> TempAwareRefineLB: PE [0] step 40 finished at 290.095320 duration 0.010923 s
+
+ Itr =         370 Itr time=   1.23576498031616       Tot time=   280.862055778503       outer loop=           3
+ Itr =         380 Itr time=   1.32788300514221       Tot time=   282.190035820007       outer loop=           3
+ Itr =         390 Itr time=   1.23731279373169       Tot time=   283.427429914474       outer loop=           3
+ Itr =         400 Itr time=   1.20079612731934       Tot time=   284.628292798996       outer loop=           3
+ Itr =         410 Itr time=   1.19095897674561       Tot time=   285.819344758987       outer loop=           3
+ Itr =         420 Itr time=   1.25605392456055       Tot time=   287.075480937958       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 41 starting at 297.473735 Memory: 132.778564 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 297.479922
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=42
+!!!!! Chip#11 running HOT shifting from 1862000 to 1729000 temp=49.250000
+!!!!! Chip#16 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=66 max=13895055.568695 myAvg=11467252.558692 dMinOverload: 1.090000 dMaxOverload: 1.220000
+dMinOverload: 1.090000 dMaxOverload: 1.220000
+total Objs=2048 MIGS=7 time=295.576143 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 7, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 297.481617 duration 0.001695 s
+CharmLB> TempAwareRefineLB: PE [0] step 41 finished at 297.484878 duration 0.011143 s
+
+ Itr =         430 Itr time=   1.17611193656921       Tot time=   288.251669883728       outer loop=           3
+ Itr =         440 Itr time=   1.38278102874756       Tot time=   289.634536981583       outer loop=           3
+ Itr =         450 Itr time=   1.18995404243469       Tot time=   290.824583768845       outer loop=           3
+ Itr =         460 Itr time=   1.19309616088867       Tot time=   292.017755985260       outer loop=           3
+ Itr =         470 Itr time=   1.21551203727722       Tot time=   293.233361959457       outer loop=           3
+ Itr =         480 Itr time=   1.19993686676025       Tot time=   294.433376789093       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 42 starting at 304.858126 Memory: 132.845642 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 304.864202
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=43
+maxPe=46 max=11325787.147999 myAvg=9997338.853685 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=4 time=302.960341 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 304.865632 duration 0.001430 s
+CharmLB> TempAwareRefineLB: PE [0] step 42 finished at 304.869322 duration 0.011196 s
+
+ Itr =         490 Itr time=   1.20274686813354       Tot time=   295.636213779449       outer loop=           3
+ Itr =         500 Itr time=   1.34127497673035       Tot time=   296.977562904358       outer loop=           3
+ Itr =         510 Itr time=   1.20970606803894       Tot time=   298.187339782715       outer loop=           3
+ Itr =         520 Itr time=   1.21120810508728       Tot time=   299.398618936539       outer loop=           3
+ Itr =         530 Itr time=   1.20088005065918       Tot time=   300.599596977234       outer loop=           3
+ Itr =         540 Itr time=   1.21337389945984       Tot time=   301.813052892685       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 43 starting at 312.210457 Memory: 132.912720 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 312.215345
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=44
+maxPe=112 max=11715113.224983 myAvg=10745584.516995 dMinOverload: 1.090000 dMaxOverload: 1.100000
+dMinOverload: 1.090000 dMaxOverload: 1.100000
+total Objs=2048 MIGS=1 time=310.311361 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 1, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 312.216651 duration 0.001306 s
+CharmLB> TempAwareRefineLB: PE [0] step 43 finished at 312.220032 duration 0.009575 s
+
+ Itr =         550 Itr time=   1.17387509346008       Tot time=   302.987009763718       outer loop=           3
+ Itr =         560 Itr time=   1.33298206329346       Tot time=   304.320065975189       outer loop=           3
+ Itr =         570 Itr time=   1.21643614768982       Tot time=   305.536590814590       outer loop=           3
+ Itr =         580 Itr time=   1.20173501968384       Tot time=   306.738397836685       outer loop=           3
+ Itr =         590 Itr time=   1.22326493263245       Tot time=   307.961776971817       outer loop=           3
+ Itr =         600 Itr time=   1.22897291183472       Tot time=   309.190821886063       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 44 starting at 319.614369 Memory: 132.975433 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 319.620577
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=45
+maxPe=98 max=8383716.020823 myAvg=6952035.192738 dMinOverload: 1.090000 dMaxOverload: 1.210000
+dMinOverload: 1.090000 dMaxOverload: 1.210000
+total Objs=2048 MIGS=8 time=317.716817 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 319.622109 duration 0.001532 s
+CharmLB> TempAwareRefineLB: PE [0] step 44 finished at 319.625639 duration 0.011270 s
+
+ Itr =         610 Itr time=   1.20213484764099       Tot time=   310.393033981323       outer loop=           3
+ Itr =         620 Itr time=   1.37421894073486       Tot time=   311.767340898514       outer loop=           3
+ Itr =         630 Itr time=   1.22116494178772       Tot time=   312.988593816757       outer loop=           3
+ Itr =         640 Itr time=   1.23163199424744       Tot time=   314.220300912857       outer loop=           3
+ Itr =         650 Itr time=   1.22927594184875       Tot time=   315.449663877487       outer loop=           3
+ Itr =         660 Itr time=   1.22642302513123       Tot time=   316.676174879074       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 45 starting at 327.115744 Memory: 133.042603 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 327.120794
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=46
+!!!!! Chip#3 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#18 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#30 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=72 max=13849104.450226 myAvg=11858826.613079 dMinOverload: 1.090000 dMaxOverload: 1.170000
+dMinOverload: 1.090000 dMaxOverload: 1.170000
+total Objs=2048 MIGS=16 time=325.217325 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 16, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 327.122953 duration 0.002159 s
+CharmLB> TempAwareRefineLB: PE [0] step 45 finished at 327.126299 duration 0.010555 s
+
+ Itr =         670 Itr time=   1.32646107673645       Tot time=   318.002705812454       outer loop=           3
+ Itr =         680 Itr time=   1.28176212310791       Tot time=   319.284562826157       outer loop=           3
+ Itr =         690 Itr time=   1.23953509330750       Tot time=   320.524169921875       outer loop=           3
+ Itr =         700 Itr time=   1.25342392921448       Tot time=   321.777694940567       outer loop=           3
+ Itr =         710 Itr time=   1.23898911476135       Tot time=   323.016757965088       outer loop=           3
+ Itr =         720 Itr time=   1.22369289398193       Tot time=   324.240538835526       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 46 starting at 334.689608 Memory: 133.109955 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 334.694805
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=47
+maxPe=98 max=8512469.810486 myAvg=7229037.775195 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=12 time=332.791215 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 12, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 334.696508 duration 0.001703 s
+CharmLB> TempAwareRefineLB: PE [0] step 46 finished at 334.699962 duration 0.010354 s
+
+ Itr =         730 Itr time=   1.32149100303650       Tot time=   325.562090873718       outer loop=           3
+ Itr =         740 Itr time=   1.27814102172852       Tot time=   326.840327978134       outer loop=           3
+ Itr =         750 Itr time=   1.30416798591614       Tot time=   328.144567966461       outer loop=           3
+ Itr =         760 Itr time=   1.23489499092102       Tot time=   329.379541873932       outer loop=           3
+ Itr =         770 Itr time=   1.23517489433289       Tot time=   330.614811897278       outer loop=           3
+ Itr =         780 Itr time=   1.32691216468811       Tot time=   331.941797971725       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 47 starting at 342.488152 Memory: 133.178467 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 342.494087
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=48
+!!!!! Chip#8 running COLD shifting from 1862000 to 1995000 temp=45.500000
+maxPe=73 max=14771138.477325 myAvg=12183514.979830 dMinOverload: 1.090000 dMaxOverload: 1.220000
+dMinOverload: 1.090000 dMaxOverload: 1.220000
+total Objs=2048 MIGS=13 time=340.590456 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 13, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 342.495858 duration 0.001771 s
+CharmLB> TempAwareRefineLB: PE [0] step 47 finished at 342.499234 duration 0.011082 s
+
+ Itr =         790 Itr time=   1.32434606552124       Tot time=   333.266214847565       outer loop=           3
+ Itr =         800 Itr time=   1.43617296218872       Tot time=   334.702483892441       outer loop=           3
+ Itr =         810 Itr time=   1.27206087112427       Tot time=   335.974624872208       outer loop=           3
+ Itr =         820 Itr time=   1.27558803558350       Tot time=   337.250283956528       outer loop=           3
+ Itr =         830 Itr time=   1.26078701019287       Tot time=   338.511142969131       outer loop=           3
+ Itr =         840 Itr time=   1.25454497337341       Tot time=   339.765824794769       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 48 starting at 350.232296 Memory: 133.244171 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 350.238490
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=49
+!!!!! Chip#3 running COLD shifting from 1995000 to 2128000 temp=45.500000
+!!!!! Chip#26 running COLD shifting from 1862000 to 1995000 temp=46.250000
+maxPe=65 max=13976484.450102 myAvg=12218699.730555 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=15 time=348.335084 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 15, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 350.240564 duration 0.002074 s
+CharmLB> TempAwareRefineLB: PE [0] step 48 finished at 350.244115 duration 0.011819 s
+
+ Itr =         850 Itr time=   1.27815008163452       Tot time=   341.044037818909       outer loop=           3
+ Itr =         860 Itr time=   1.40857911109924       Tot time=   342.452690839767       outer loop=           3
+ Itr =         870 Itr time=   1.25027990341187       Tot time=   343.703038930893       outer loop=           3
+ Itr =         880 Itr time=   1.26099491119385       Tot time=   344.964097976685       outer loop=           3
+ Itr =         890 Itr time=   1.27463483810425       Tot time=   346.238798856735       outer loop=           3
+ Itr =         900 Itr time=   1.28846502304077       Tot time=   347.527336835861       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 49 starting at 357.980460 Memory: 133.311981 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 357.985408
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=50
+!!!!! Chip#1 running COLD shifting from 2128000 to 2261000 temp=45.000000
+!!!!! Chip#12 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#19 running COLD shifting from 1862000 to 1995000 temp=45.500000
+maxPe=49 max=14437351.825714 myAvg=12302434.409979 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=15 time=356.081871 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 15, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 357.987402 duration 0.001994 s
+CharmLB> TempAwareRefineLB: PE [0] step 49 finished at 357.990918 duration 0.010458 s
+
+ Itr =         910 Itr time=   1.22984409332275       Tot time=   348.757247924805       outer loop=           3
+ Itr =         920 Itr time=   1.43386983871460       Tot time=   350.191187858582       outer loop=           3
+ Itr =         930 Itr time=   1.29317688941956       Tot time=   351.484458923340       outer loop=           3
+ Itr =         940 Itr time=   1.26749110221863       Tot time=   352.752035856247       outer loop=           3
+ Itr =         950 Itr time=   1.26382303237915       Tot time=   354.015926837921       outer loop=           3
+ Itr =         960 Itr time=   1.34012198448181       Tot time=   355.356119871140       outer loop=           3
+
+CharmLB> TempAwareRefineLB: PE [0] step 50 starting at 365.892318 Memory: 133.378418 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 365.898729
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=51
+!!!!! Chip#5 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#16 running COLD shifting from 1995000 to 2128000 temp=46.750000
+!!!!! Chip#20 running COLD shifting from 1862000 to 1995000 temp=46.500000
+!!!!! Chip#30 running COLD shifting from 1862000 to 1995000 temp=46.500000
+maxPe=65 max=15161808.124781 myAvg=13264323.666534 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=15 time=363.995279 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 15, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 365.900910 duration 0.002181 s
+CharmLB> TempAwareRefineLB: PE [0] step 50 finished at 365.904298 duration 0.011980 s
+
+ Itr =         970 Itr time=   1.42607188224792       Tot time=   356.782253980637       outer loop=           3
+ Itr =         980 Itr time=   1.30595397949219       Tot time=   358.088277816772       outer loop=           3
+ Itr =         990 Itr time=   1.25832104682922       Tot time=   359.346671819687       outer loop=           3
+ Itr =        1000 Itr time=   1.26748704910278       Tot time=   360.614233970642       outer loop=           3
+ class = U
+
+CharmLB> TempAwareRefineLB: PE [0] step 51 starting at 371.260775 Memory: 133.448761 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 371.266917
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=52
+maxPe=113 max=8982191.001892 myAvg=8013282.107419 dMinOverload: 1.090000 dMaxOverload: 1.130000
+dMinOverload: 1.090000 dMaxOverload: 1.130000
+total Objs=2048 MIGS=6 time=369.363121 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 371.268412 duration 0.001495 s
+CharmLB> TempAwareRefineLB: PE [0] step 51 finished at 371.272138 duration 0.011363 s
+
+ Itr =          10 Itr time=   1.29936408996582       Tot time=   362.038353919983       outer loop=           4
+ Itr =          20 Itr time=   1.34218215942383       Tot time=   363.380607843399       outer loop=           4
+ Itr =          30 Itr time=   1.21054506301880       Tot time=   364.591220855713       outer loop=           4
+ Itr =          40 Itr time=   1.22159981727600       Tot time=   365.812923908234       outer loop=           4
+ Itr =          50 Itr time=   1.21593117713928       Tot time=   367.028946876526       outer loop=           4
+ Itr =          60 Itr time=   1.21893596649170       Tot time=   368.247970819473       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 52 starting at 378.661981 Memory: 133.512634 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 378.667189
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=53
+!!!!! Chip#11 running COLD shifting from 1729000 to 1862000 temp=46.750000
+!!!!! Chip#15 running COLD shifting from 2128000 to 2261000 temp=46.750000
+!!!!! Chip#17 running COLD shifting from 1862000 to 1995000 temp=46.750000
+!!!!! Chip#18 running COLD shifting from 1995000 to 2128000 temp=46.500000
+maxPe=127 max=12494618.939877 myAvg=10618352.601735 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=20 time=376.763793 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 20, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 378.669471 duration 0.002282 s
+CharmLB> TempAwareRefineLB: PE [0] step 52 finished at 378.672989 duration 0.011008 s
+
+ Itr =          70 Itr time=   1.19094204902649       Tot time=   369.438988924026       outer loop=           4
+ Itr =          80 Itr time=   1.39089703559875       Tot time=   370.829970836639       outer loop=           4
+ Itr =          90 Itr time=   1.22482705116272       Tot time=   372.054886817932       outer loop=           4
+ Itr =         100 Itr time=   1.21875500679016       Tot time=   373.273724794388       outer loop=           4
+ Itr =         110 Itr time=   1.24097394943237       Tot time=   374.514775753021       outer loop=           4
+ Itr =         120 Itr time=   1.22909712791443       Tot time=   375.743940830231       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 53 starting at 386.230597 Memory: 133.580505 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 386.236965
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=54
+!!!!! Chip#11 running COLD shifting from 1862000 to 1995000 temp=46.750000
+!!!!! Chip#13 running COLD shifting from 1995000 to 2128000 temp=46.750000
+!!!!! Chip#15 running COLD shifting from 2261000 to 2394000 temp=46.750000
+!!!!! Chip#23 running COLD shifting from 1862000 to 1995000 temp=46.750000
+!!!!! Chip#28 running COLD shifting from 1862000 to 1995000 temp=46.750000
+maxPe=107 max=12565659.352541 myAvg=11257130.273300 dMinOverload: 1.090000 dMaxOverload: 1.120000
+dMinOverload: 1.090000 dMaxOverload: 1.120000
+total Objs=2048 MIGS=8 time=384.333215 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 8, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 386.238952 duration 0.001987 s
+CharmLB> TempAwareRefineLB: PE [0] step 53 finished at 386.242356 duration 0.011759 s
+
+ Itr =         130 Itr time=   1.26848602294922       Tot time=   377.012492895126       outer loop=           4
+ Itr =         140 Itr time=   1.35630702972412       Tot time=   378.368891954422       outer loop=           4
+ Itr =         150 Itr time=   1.20795702934265       Tot time=   379.576929807663       outer loop=           4
+ Itr =         160 Itr time=   1.27846002578735       Tot time=   380.855460882187       outer loop=           4
+ Itr =         170 Itr time=   1.25007915496826       Tot time=   382.105620861053       outer loop=           4
+ Itr =         180 Itr time=   1.24091100692749       Tot time=   383.346600770950       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 54 starting at 393.768764 Memory: 133.647705 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 393.775037
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=55
+!!!!! Chip#1 running COLD shifting from 2261000 to 2394000 temp=44.250000
+!!!!! Chip#9 running COLD shifting from 1862000 to 1995000 temp=46.750000
+!!!!! Chip#13 running COLD shifting from 2128000 to 2261000 temp=45.250000
+maxPe=98 max=7683052.312374 myAvg=6691867.937035 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=4 time=391.871122 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 393.776711 duration 0.001674 s
+CharmLB> TempAwareRefineLB: PE [0] step 54 finished at 393.780111 duration 0.011347 s
+
+ Itr =         190 Itr time=   1.19947099685669       Tot time=   384.546137809753       outer loop=           4
+ Itr =         200 Itr time=   1.38041090965271       Tot time=   385.926627874374       outer loop=           4
+ Itr =         210 Itr time=   1.23971390724182       Tot time=   387.166414976120       outer loop=           4
+ Itr =         220 Itr time=   1.23447012901306       Tot time=   388.400951862335       outer loop=           4
+ Itr =         230 Itr time=   1.21284794807434       Tot time=   389.613873958588       outer loop=           4
+ Itr =         240 Itr time=   1.23314404487610       Tot time=   390.847085952759       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 55 starting at 401.277768 Memory: 133.716278 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 401.284166
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=56
+!!!!! Chip#1 running HOT shifting from 2394000 to 2261000 temp=49.500000
+!!!!! Chip#13 running HOT shifting from 2261000 to 2128000 temp=49.250000
+maxPe=31 max=12319772.733450 myAvg=11182436.738921 dMinOverload: 1.090000 dMaxOverload: 1.110000
+dMinOverload: 1.090000 dMaxOverload: 1.110000
+total Objs=2048 MIGS=2 time=399.380281 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 401.285835 duration 0.001669 s
+CharmLB> TempAwareRefineLB: PE [0] step 55 finished at 401.289435 duration 0.011667 s
+
+ Itr =         250 Itr time=   1.21357703208923       Tot time=   392.060733795166       outer loop=           4
+ Itr =         260 Itr time=   1.29977512359619       Tot time=   393.360596895218       outer loop=           4
+ Itr =         270 Itr time=   1.21581912040710       Tot time=   394.576486825943       outer loop=           4
+ Itr =         280 Itr time=   1.23336911201477       Tot time=   395.809926986694       outer loop=           4
+ Itr =         290 Itr time=   1.23898983001709       Tot time=   397.048986911774       outer loop=           4
+ Itr =         300 Itr time=   1.25941681861877       Tot time=   398.308477878571       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 56 starting at 408.718370 Memory: 133.782959 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 408.723304
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=57
+maxPe=105 max=12378909.208775 myAvg=11172400.186689 dMinOverload: 1.090000 dMaxOverload: 1.110000
+dMinOverload: 1.090000 dMaxOverload: 1.110000
+total Objs=2048 MIGS=2 time=406.819388 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 408.724676 duration 0.001372 s
+CharmLB> TempAwareRefineLB: PE [0] step 56 finished at 408.727879 duration 0.009509 s
+
+ Itr =         310 Itr time=   1.19308090209961       Tot time=   399.501648902893       outer loop=           4
+ Itr =         320 Itr time=   1.25882697105408       Tot time=   400.760549783707       outer loop=           4
+ Itr =         330 Itr time=   1.21527409553528       Tot time=   401.975891828537       outer loop=           4
+ Itr =         340 Itr time=   1.20169091224670       Tot time=   403.177646875381       outer loop=           4
+ Itr =         350 Itr time=   1.20372200012207       Tot time=   404.381452798843       outer loop=           4
+ Itr =         360 Itr time=   1.24244189262390       Tot time=   405.623971939087       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 57 starting at 416.045062 Memory: 133.850159 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 416.050360
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=58
+!!!!! Chip#1 running HOT shifting from 2261000 to 2128000 temp=49.500000
+maxPe=70 max=12158881.509304 myAvg=11208653.698568 dMinOverload: 1.090000 dMaxOverload: 1.090000
+dMinOverload: 1.090000 dMaxOverload: 1.090000
+total Objs=2048 MIGS=0 time=414.146438 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 0, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 416.051826 duration 0.001466 s
+CharmLB> TempAwareRefineLB: PE [0] step 57 finished at 416.054935 duration 0.009873 s
+
+ Itr =         370 Itr time=   1.19681000709534       Tot time=   406.820848941803       outer loop=           4
+ Itr =         380 Itr time=   1.30061697959900       Tot time=   408.121537923813       outer loop=           4
+ Itr =         390 Itr time=   1.21420979499817       Tot time=   409.335820913315       outer loop=           4
+ Itr =         400 Itr time=   1.20334911346436       Tot time=   410.539238929749       outer loop=           4
+ Itr =         410 Itr time=   1.21099305152893       Tot time=   411.750332832336       outer loop=           4
+ Itr =         420 Itr time=   1.21586585044861       Tot time=   412.966293811798       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 58 starting at 423.379332 Memory: 133.916809 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 423.384138
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=59
+!!!!! Chip#8 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#19 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=76 max=12015369.880199 myAvg=10515617.640178 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=6 time=421.480276 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 423.385753 duration 0.001615 s
+CharmLB> TempAwareRefineLB: PE [0] step 58 finished at 423.389143 duration 0.009811 s
+
+ Itr =         430 Itr time=   1.18887805938721       Tot time=   414.155243873596       outer loop=           4
+ Itr =         440 Itr time=   1.36930298805237       Tot time=   415.524644851685       outer loop=           4
+ Itr =         450 Itr time=   1.20841598510742       Tot time=   416.733149766922       outer loop=           4
+ Itr =         460 Itr time=   1.21720504760742       Tot time=   417.950434923172       outer loop=           4
+ Itr =         470 Itr time=   1.20587182044983       Tot time=   419.156379938126       outer loop=           4
+ Itr =         480 Itr time=   1.23380684852600       Tot time=   420.390263795853       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 59 starting at 430.802974 Memory: 133.984344 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 430.809191
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=60
+!!!!! Chip#31 running COLD shifting from 1862000 to 1995000 temp=46.750000
+maxPe=76 max=11763254.910946 myAvg=10518577.863853 dMinOverload: 1.090000 dMaxOverload: 1.120000
+dMinOverload: 1.090000 dMaxOverload: 1.120000
+total Objs=2048 MIGS=4 time=428.905320 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 4, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 430.810706 duration 0.001515 s
+CharmLB> TempAwareRefineLB: PE [0] step 59 finished at 430.813984 duration 0.011010 s
+
+ Itr =         490 Itr time=   1.18988394737244       Tot time=   421.580211877823       outer loop=           4
+ Itr =         500 Itr time=   1.33232998847961       Tot time=   422.912614822388       outer loop=           4
+ Itr =         510 Itr time=   1.23415207862854       Tot time=   424.146845817566       outer loop=           4
+ Itr =         520 Itr time=   1.22263884544373       Tot time=   425.369547843933       outer loop=           4
+ Itr =         530 Itr time=   1.21294212341309       Tot time=   426.582562923431       outer loop=           4
+ Itr =         540 Itr time=   1.21796584129333       Tot time=   427.800620794296       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 60 starting at 438.277778 Memory: 134.051453 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 438.282719
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=61
+!!!!! Chip#4 running COLD shifting from 2128000 to 2261000 temp=46.500000
+maxPe=100 max=11519482.439041 myAvg=10472741.549990 dMinOverload: 1.090000 dMaxOverload: 1.100000
+dMinOverload: 1.090000 dMaxOverload: 1.100000
+total Objs=2048 MIGS=2 time=436.378793 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 2, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 438.284169 duration 0.001450 s
+CharmLB> TempAwareRefineLB: PE [0] step 60 finished at 438.287739 duration 0.009961 s
+
+ Itr =         550 Itr time=   1.25325894355774       Tot time=   429.053959846497       outer loop=           4
+ Itr =         560 Itr time=   1.32777810096741       Tot time=   430.381812810898       outer loop=           4
+ Itr =         570 Itr time=   1.22301197052002       Tot time=   431.604893922806       outer loop=           4
+ Itr =         580 Itr time=   1.20027303695679       Tot time=   432.805267810822       outer loop=           4
+ Itr =         590 Itr time=   1.21378087997437       Tot time=   434.019136905670       outer loop=           4
+ Itr =         600 Itr time=   1.22017788887024       Tot time=   435.239393949509       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 61 starting at 445.688289 Memory: 134.118439 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 445.694570
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=62
+!!!!! Chip#2 running COLD shifting from 2128000 to 2261000 temp=46.500000
+!!!!! Chip#9 running COLD shifting from 1995000 to 2128000 temp=46.250000
+!!!!! Chip#19 running COLD shifting from 1862000 to 1995000 temp=46.500000
+!!!!! Chip#30 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=48 max=12574944.419861 myAvg=11199470.619831 dMinOverload: 1.090000 dMaxOverload: 1.130000
+dMinOverload: 1.090000 dMaxOverload: 1.130000
+total Objs=2048 MIGS=11 time=443.790933 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 11, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 445.696621 duration 0.002051 s
+CharmLB> TempAwareRefineLB: PE [0] step 61 finished at 445.699955 duration 0.011666 s
+
+ Itr =         610 Itr time=   1.22675180435181       Tot time=   436.466214895248       outer loop=           4
+ Itr =         620 Itr time=   1.34616613388062       Tot time=   437.812465906143       outer loop=           4
+ Itr =         630 Itr time=   1.20770120620728       Tot time=   439.020241975784       outer loop=           4
+ Itr =         640 Itr time=   1.19743800163269       Tot time=   440.217754840851       outer loop=           4
+ Itr =         650 Itr time=   1.23784494400024       Tot time=   441.455668926239       outer loop=           4
+ Itr =         660 Itr time=   1.23608183860779       Tot time=   442.691821813583       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 62 starting at 453.109990 Memory: 134.185303 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 453.116357
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=63
+!!!!! Chip#2 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#7 running COLD shifting from 1995000 to 2128000 temp=46.500000
+!!!!! Chip#15 running HOT shifting from 2394000 to 2261000 temp=49.750000
+maxPe=24 max=12906233.110428 myAvg=11400654.572652 dMinOverload: 1.090000 dMaxOverload: 1.140000
+dMinOverload: 1.090000 dMaxOverload: 1.140000
+total Objs=2048 MIGS=6 time=451.212577 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 6, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 453.118109 duration 0.001752 s
+CharmLB> TempAwareRefineLB: PE [0] step 62 finished at 453.121588 duration 0.011598 s
+
+ Itr =         670 Itr time=   1.19563412666321       Tot time=   443.887524843216       outer loop=           4
+ Itr =         680 Itr time=   1.36108398437500       Tot time=   445.248685836792       outer loop=           4
+ Itr =         690 Itr time=   1.29761505126953       Tot time=   446.546378850937       outer loop=           4
+ Itr =         700 Itr time=   1.21088194847107       Tot time=   447.757346868515       outer loop=           4
+ Itr =         710 Itr time=   1.21309804916382       Tot time=   448.970519781113       outer loop=           4
+ Itr =         720 Itr time=   1.22536015510559       Tot time=   450.195958852768       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 63 starting at 460.631788 Memory: 134.252289 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 460.637969
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=64
+!!!!! Chip#18 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=73 max=14088897.548676 myAvg=11570678.563861 dMinOverload: 1.090000 dMaxOverload: 1.220000
+dMinOverload: 1.090000 dMaxOverload: 1.220000
+total Objs=2048 MIGS=11 time=458.734432 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 11, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 460.639817 duration 0.001848 s
+CharmLB> TempAwareRefineLB: PE [0] step 63 finished at 460.643475 duration 0.011687 s
+
+ Itr =         730 Itr time=   1.21376895904541       Tot time=   451.409791946411       outer loop=           4
+ Itr =         740 Itr time=   1.42801690101624       Tot time=   452.837883949280       outer loop=           4
+ Itr =         750 Itr time=   1.21350884437561       Tot time=   454.051468849182       outer loop=           4
+ Itr =         760 Itr time=   1.24669790267944       Tot time=   455.298255920410       outer loop=           4
+ Itr =         770 Itr time=   1.21538281440735       Tot time=   456.513707876205       outer loop=           4
+ Itr =         780 Itr time=   1.27776288986206       Tot time=   457.791548967361       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 64 starting at 468.214912 Memory: 134.319214 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 468.228963
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=65
+!!!!! Chip#9 running HOT shifting from 2128000 to 1995000 temp=49.250000
+!!!!! Chip#12 running COLD shifting from 1995000 to 2128000 temp=46.750000
+!!!!! Chip#13 running HOT shifting from 2128000 to 1995000 temp=49.500000
+!!!!! Chip#15 running HOT shifting from 2261000 to 2128000 temp=49.500000
+!!!!! Chip#19 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#23 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=63 max=15461347.760916 myAvg=12685272.951186 dMinOverload: 1.090000 dMaxOverload: 1.220000
+dMinOverload: 1.090000 dMaxOverload: 1.220000
+total Objs=2048 MIGS=16 time=466.325644 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 16, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 468.231412 duration 0.002449 s
+CharmLB> TempAwareRefineLB: PE [0] step 64 finished at 468.238099 duration 0.023187 s
+
+ Itr =         790 Itr time=   1.21559190750122       Tot time=   459.007204771042       outer loop=           4
+ Itr =         800 Itr time=   1.38248300552368       Tot time=   460.389756917953       outer loop=           4
+ Itr =         810 Itr time=   1.23747992515564       Tot time=   461.627312898636       outer loop=           4
+ Itr =         820 Itr time=   1.24485301971436       Tot time=   462.872245788574       outer loop=           4
+ Itr =         830 Itr time=   1.25274610519409       Tot time=   464.125076770782       outer loop=           4
+ Itr =         840 Itr time=   1.25344204902649       Tot time=   465.378601789474       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 65 starting at 475.825470 Memory: 134.386230 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 475.830385
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=66
+!!!!! Chip#4 running HOT shifting from 2261000 to 2128000 temp=49.250000
+!!!!! Chip#11 running HOT shifting from 1995000 to 1862000 temp=49.250000
+!!!!! Chip#20 running HOT shifting from 1995000 to 1862000 temp=49.500000
+!!!!! Chip#31 running HOT shifting from 1995000 to 1862000 temp=49.500000
+maxPe=126 max=13480801.885128 myAvg=11366515.951071 dMinOverload: 1.090000 dMaxOverload: 1.190000
+dMinOverload: 1.090000 dMaxOverload: 1.190000
+total Objs=2048 MIGS=15 time=473.926975 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 15, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 475.832641 duration 0.002256 s
+CharmLB> TempAwareRefineLB: PE [0] step 65 finished at 475.836211 duration 0.010741 s
+
+ Itr =         850 Itr time=   1.32197999954224       Tot time=   466.700642824173       outer loop=           4
+ Itr =         860 Itr time=   1.30276799201965       Tot time=   468.003487825394       outer loop=           4
+ Itr =         870 Itr time=   1.26896309852600       Tot time=   469.272529840469       outer loop=           4
+ Itr =         880 Itr time=   1.25122404098511       Tot time=   470.523845911026       outer loop=           4
+ Itr =         890 Itr time=   1.26105999946594       Tot time=   471.785002946854       outer loop=           4
+ Itr =         900 Itr time=   1.24645209312439       Tot time=   473.031544923782       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 66 starting at 483.504285 Memory: 134.453857 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 483.510456
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=67
+!!!!! Chip#28 running HOT shifting from 1995000 to 1862000 temp=49.250000
+maxPe=114 max=13194930.639267 myAvg=11511043.177112 dMinOverload: 1.090000 dMaxOverload: 1.150000
+dMinOverload: 1.090000 dMaxOverload: 1.150000
+total Objs=2048 MIGS=17 time=481.607019 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 17, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 483.512413 duration 0.001957 s
+CharmLB> TempAwareRefineLB: PE [0] step 66 finished at 483.515939 duration 0.011654 s
+
+ Itr =         910 Itr time=   1.34713292121887       Tot time=   474.378741979599       outer loop=           4
+ Itr =         920 Itr time=   1.33585619926453       Tot time=   475.714671850204       outer loop=           4
+ Itr =         930 Itr time=   1.24167108535767       Tot time=   476.956439971924       outer loop=           4
+ Itr =         940 Itr time=   1.25139403343201       Tot time=   478.207909822464       outer loop=           4
+ Itr =         950 Itr time=   1.26928091049194       Tot time=   479.477268934250       outer loop=           4
+ Itr =         960 Itr time=   1.25113892555237       Tot time=   480.728504896164       outer loop=           4
+
+CharmLB> TempAwareRefineLB: PE [0] step 67 starting at 491.182160 Memory: 134.520752 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy starting at 491.187112
+((((((((((( in changed !!!!!!!!!! ORG REFINE )))))))))))) stepLB=68
+!!!!! Chip#16 running HOT shifting from 2128000 to 1995000 temp=49.250000
+maxPe=66 max=14617967.575073 myAvg=12478220.636809 dMinOverload: 1.090000 dMaxOverload: 1.180000
+dMinOverload: 1.090000 dMaxOverload: 1.180000
+total Objs=2048 MIGS=11 time=489.283466 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+CharmLB> TempAwareRefineLB: PE [0] Memory: LBManager: 921 KB CentralLB: 139 KB
+CharmLB> TempAwareRefineLB: PE [0] #Objects migrating: 11, LBMigrateMsg size: 0.00 MB
+CharmLB> TempAwareRefineLB: PE [0] strategy finished at 491.188864 duration 0.001752 s
+CharmLB> TempAwareRefineLB: PE [0] step 67 finished at 491.192539 duration 0.010379 s
+
+ Itr =         970 Itr time=   1.23156690597534       Tot time=   481.960140943527       outer loop=           4
+ Itr =         980 Itr time=   1.41895794868469       Tot time=   483.379175901413       outer loop=           4
+ Itr =         990 Itr time=   1.26932191848755       Tot time=   484.648565769196       outer loop=           4
+ Itr =        1000 Itr time=   1.20137119293213       Tot time=   485.850019931793       outer loop=           4
+ class = U
+
+
+ FT Benchmark Completed.
+ Class           =                        U
+ Size            =            256x 256x 128
+ Iterations      =                     1000
+ Time in seconds =                   125.16
+ Total processes =                     2048
+ Compiled procs  =                     2048
+ Mop/s total     =                  8064.73
+ Mop/s/process   =                     3.94
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                      3.3
+ Compile date    =              01 Nov 2011
+
+ Compile options:
+    MPIF77       = $(CHARMDIR)/bin/charmc -language ampif -mem...
+    FLINK        = $(MPIF77)
+    FMPI_LIB     = -L$(CHARMDIR)/lib
+    FMPI_INC     = -I$(CHARMDIR)/include
+    FFLAGS       = -O0 -qfixed -swapglobals
+    FLINKFLAGS   = -lckf -swapglobals $(MEMORYOPT)
+    RAND         = randi8
+
+
+ Please send the results of this run to:
+
+ NPB Development Team 
+ Internet: npb@nas.nasa.gov
+ 
+ If email is not available, send this to:
+
+ MS T27A-1
+ NASA Ames Research Center
+ Moffett Field, CA  94035-1000
+
+ Fax: 650-604-3957
+
+

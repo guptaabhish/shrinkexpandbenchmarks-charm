@@ -1,0 +1,66 @@
+profiling: run
+running on 20 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378571471.0 1378571776.0
+profiling at pkg power=29w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378571803.0 1378572112.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378572140.0 1378572449.0
+profiling at pkg power=31w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378572476.0 1378572785.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378572812.0 1378573121.0
+profiling at pkg power=33w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378573149.0 1378573465.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378573493.0 1378573801.0
+profiling at pkg power=35w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378573829.0 1378574137.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378574165.0 1378574473.0
+profiling at pkg power=37w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378574501.0 1378574809.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378574837.0 1378575153.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378575181.0 1378575489.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378575517.0 1378575825.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378575853.0 1378576169.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378576197.0 1378576513.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/wavetemp/
+running command: ./charmrun ./wave2d 2200.40 +p120 ++nodelist nodes40 +setcpuaffinity +pemap 0-5 |tee out
+job wall times 1378576541.0 1378576857.0

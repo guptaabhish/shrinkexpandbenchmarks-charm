@@ -1,0 +1,1 @@
+./charmrun ./wave2d.greedy 2200.40 +p60 ++server ++server-port 1234  ++nodelist nodes40 +setcpuaffinity +pemap 0-5 +balancer RefineLB +LBDebug 3 

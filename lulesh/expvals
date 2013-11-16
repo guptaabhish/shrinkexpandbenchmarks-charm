@@ -1,0 +1,1 @@
+./charmrun +p128 ./llCharm-syncft 512 256 256 32 16 16 100000 30 18.67 +setcpuaffinity +pemap 0-3 ++nodelist nodes40 |tee out

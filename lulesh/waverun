@@ -1,0 +1,1 @@
+./charmrun ./llCharm 512 512 640 64 16 32 100000 3000 180000.67   +p60 ++server ++server-port 1234  ++nodelist nodes40 +setcpuaffinity +pemap 0-5 +balancer GreedyLB +LBDebug 3

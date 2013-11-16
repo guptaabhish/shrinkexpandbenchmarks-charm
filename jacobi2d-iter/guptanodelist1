@@ -1,0 +1,21 @@
+group main ++shell ssh
+host tarekc01.cs.uiuc.edu
+host tarekc01.cs.uiuc.edu
+host tarekc01.cs.uiuc.edu
+host tarekc01.cs.uiuc.edu
+host tarekc02.cs.uiuc.edu
+host tarekc02.cs.uiuc.edu
+host tarekc02.cs.uiuc.edu
+host tarekc02.cs.uiuc.edu
+host tarekc03.cs.uiuc.edu
+host tarekc03.cs.uiuc.edu
+host tarekc03.cs.uiuc.edu
+host tarekc03.cs.uiuc.edu
+host tarekc04.cs.uiuc.edu
+host tarekc04.cs.uiuc.edu
+host tarekc04.cs.uiuc.edu
+host tarekc04.cs.uiuc.edu
+host tarekc05.cs.uiuc.edu
+host tarekc06.cs.uiuc.edu
+host tarekc07.cs.uiuc.edu
+host tarekc08.cs.uiuc.edu

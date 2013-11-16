@@ -1,0 +1,7 @@
+group main ++shell ssh
+host 172.22.68.60
+host 172.22.68.61
+host 172.22.68.62
+host 172.22.68.63
+host 172.22.68.64
+host 172.22.68.65

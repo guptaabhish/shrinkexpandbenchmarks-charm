@@ -1,0 +1,40 @@
+module PowerLog{
+  group PowerLogger{
+    entry PowerLogger(int);
+  };
+};
+
+
+mainmodule wave2d {
+	extern module PowerLog;
+
+  readonly CProxy_Main mainProxy;
+  readonly CProxy_Wave arrayProxy;
+
+  mainchare Main {
+    entry Main(CkArgMsg *m);
+//    entry void iterationCompleted();
+		entry void iterationCompleted(CkReductionMsg *m);
+		entry void afterCkpt();
+		entry void updateLastT();
+  };
+
+  array [2D] Wave {
+    entry Wave(void);
+    entry void begin_iteration();
+    entry void recvGhosts(int whichSide, int height, double s[height]);
+    entry void doSync();
+    entry void doTrace();
+    entry void endTrace();
+
+    // A method for requesting data to be displayed graphically to the user
+//    entry void requestNextFrame(liveVizRequestMsg *m);
+  };
+
+  group MyBlockMap : CkArrayMap {
+    entry MyBlockMap();
+  };
+
+
+};
+

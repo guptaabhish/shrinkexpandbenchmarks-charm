@@ -1,0 +1,50 @@
+[38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]profiling: run
+running on 4 nodes
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374685225.0 1374685529.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374685547.0 1374685853.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374685871.0 1374686178.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374686195.0 1374686499.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374686517.0 1374686820.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374686838.0 1374687144.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374687162.0 1374687468.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374687485.0 1374687789.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374687807.0 1374688111.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374688129.0 1374688433.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374688451.0 1374688755.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/jacobi2d-iter/
+running command: ./charmrun +p24 ./jacobi2d 72000 600 10000 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374688773.0 1374689079.0

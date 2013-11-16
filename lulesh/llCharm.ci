@@ -1,0 +1,117 @@
+module PowerLog{
+  group PowerLogger{
+    entry PowerLogger(int);
+  };
+};
+
+
+mainmodule llCharm {
+	extern module PowerLog;
+
+  readonly CProxy_Main mainProxy;
+  readonly int elemDimX;
+  readonly int elemDimY;
+  readonly int elemDimZ;
+  readonly int blockDimX;
+  readonly int blockDimY;
+  readonly int blockDimZ;
+  readonly int ghostDimX;
+  readonly int ghostDimY;
+  readonly int ghostDimZ;
+  readonly int chareDimX;
+  readonly int chareDimY;
+  readonly int chareDimZ;
+  readonly double charesPerPE;
+  readonly int numElems;
+  readonly int numNodes;
+  readonly int ghostElems;
+  readonly int frontOffset;
+  readonly int backOffset;
+  readonly int rightOffset;
+  readonly int leftOffset;
+  readonly int upOffset;
+  readonly int downOffset;
+  readonly Real_t stopTime;
+  readonly int lbFrequency;
+  readonly int cpFrequency;
+  readonly int maxIterations;
+
+  // Register Reductions initnodes
+  initnode void registerMinReal(void);
+  initnode void registerAveTime(void);
+
+  mainchare [migratable] Main {
+    entry Main(CkArgMsg *msg);
+
+    // Checkin for taking average timing
+    entry void averageTimeCheckin(CkReductionMsg *msg);
+
+    // Checkin for initialization
+    entry void initCheckin(CkReductionMsg *msg);
+    entry void report(CkReductionMsg *msg);
+		entry void afterCkpt();
+		entry void updateLastT();
+
+#if CMK_MEM_CHECKPOINT
+	// checkpoint
+	entry void initCheckpoint();
+#endif
+  };
+
+  array [3D] Domain {
+    entry Domain();
+		//entry void updateCkptParams(int,int);
+    // Load balancing routine
+    entry void startLB();
+	//entry void barrier1();
+	//entry void barrier2();
+
+    // Start Lagrange Leap-Frog
+    entry void beginIteration();
+    // Finish Lagrange Leap-Frog and
+    // calculate Time Constraints
+    entry void resumeNodeIteration();
+    entry void resumeElemIteration();
+	// send nodal mass
+	entry void sendNodalMass();
+	entry void ResumeFromSync();
+#if CMK_MEM_CHECKPOINT
+    //entry void recvCheckPointDone();
+#endif
+
+    // Receives nodal forces from neighboring domains
+    entry void receiveNodeGhosts(int iter, int dir, int width, int height,
+                                 Real_t ghostData[width*height*3]);
+	// dummy barrier
+    // Receives element viscocities from neighboring domains
+    entry void receiveElemGhosts(int iter, int dir, int width, int height,
+                                 Real_t ghostData[width*height*3]);
+    // Receives nodal mass from neighboring domains (initialization only)
+    entry void receiveNodalMass(int dir, int width, int height,
+                                 Real_t ghostData[width*height]);
+
+    // Print energy for correctness testing
+    entry void printEnergy();
+
+    //
+    // SDAG
+    //
+
+    entry void begin_iteration();
+		entry void doSync();
+
+		entry void run1(){
+
+      // Iterations Completed
+      atomic {
+		//iterations++;
+		//contribute(sizeof(int),&iterations,CkReduction::max_int,CkCallback(CkIndex_Main::report(NULL),mainProxy));
+        //endIterTime = CmiWallTimer();
+        //iterTime = endIterTime - startIterTime;
+        //averageTime();
+      }
+    };
+
+  };
+
+};

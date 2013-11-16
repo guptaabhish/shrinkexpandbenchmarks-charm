@@ -1,0 +1,36 @@
+profiling: lulesh_M35
+running on 7 nodes
+profiling at pkg power=41w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p42 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368827956.0 1368828064.0
+running on 8 nodes
+profiling at pkg power=48w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368828098.0 1368828204.0
+running on 10 nodes
+profiling at pkg power=46w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p60 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368828242.0 1368828350.0
+running on 12 nodes
+profiling at pkg power=42w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368828383.0 1368828494.0
+running on 13 nodes
+profiling at pkg power=50w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p78 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368828527.0 1368828633.0
+running on 15 nodes
+profiling at pkg power=46w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p90 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368828666.0 1368828775.0
+running on 16 nodes
+profiling at pkg power=48w, dram power=35w
+changing to directory: /home/sarood1/fa12-cs598lvk-project/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1368828808.0 1368828919.0

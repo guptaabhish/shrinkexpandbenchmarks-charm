@@ -1,0 +1,346 @@
+[28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]profiling: run
+running on 20 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374722763.0 1374723085.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374723114.0 1374723437.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374723467.0 1374723772.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374723801.0 1374724110.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374724139.0 1374724448.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374724477.0 1374724787.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374724817.0 1374725127.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374725156.0 1374725464.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374725493.0 1374725802.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374725831.0 1374726141.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374726170.0 1374726481.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374726510.0 1374726819.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374726847.0 1374727158.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374727186.0 1374727496.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374727525.0 1374727842.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374727871.0 1374728188.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p120 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374728217.0 1374728527.0
+running on 16 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374728553.0 1374728868.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374728894.0 1374729205.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374729232.0 1374729542.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374729568.0 1374729878.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374729904.0 1374730215.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374730242.0 1374730552.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374730578.0 1374730889.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374730916.0 1374731222.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374731248.0 1374731559.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374731585.0 1374731890.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374731916.0 1374732225.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374732252.0 1374732561.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374732587.0 1374732897.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374732923.0 1374733241.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374733268.0 1374733577.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374733604.0 1374733914.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p96 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374733940.0 1374734250.0
+running on 12 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374734274.0 1374734591.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374734614.0 1374734929.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374734952.0 1374735264.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374735287.0 1374735600.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374735623.0 1374735933.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374735956.0 1374736262.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374736286.0 1374736596.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374736620.0 1374736928.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374736952.0 1374737257.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374737280.0 1374737589.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374737613.0 1374737918.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374737942.0 1374738250.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374738274.0 1374738578.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374738602.0 1374738911.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374738934.0 1374739245.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374739269.0 1374739574.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p72 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374739598.0 1374739909.0
+running on 8 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374739930.0 1374740236.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374740257.0 1374740565.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374740585.0 1374740900.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374740921.0 1374741227.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374741248.0 1374741558.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374741579.0 1374741883.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374741904.0 1374742210.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374742231.0 1374742539.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374742560.0 1374742872.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374742893.0 1374743201.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374743222.0 1374743527.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374743548.0 1374743857.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374743877.0 1374744182.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374744203.0 1374744508.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374744529.0 1374744837.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374744858.0 1374745169.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p48 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374745190.0 1374745499.0
+running on 4 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374745516.0 1374745839.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374745861.0 1374746172.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374746191.0 1374746496.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374746516.0 1374746821.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374746842.0 1374747157.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374747177.0 1374747492.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374747511.0 1374747820.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374747840.0 1374748153.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374748172.0 1374748483.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374748503.0 1374748814.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374748833.0 1374749143.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374749162.0 1374749470.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374749490.0 1374749799.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374749818.0 1374750127.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374750146.0 1374750458.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374750477.0 1374750788.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/lulesh/
+running command: ./charmrun +p24 ./llCharm 512 512 640 64 16 32 100000 3000 180000.67 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 |tee out
+job wall times 1374750807.0 1374751117.0

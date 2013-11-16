@@ -1,0 +1,35 @@
+module PowerLog{
+  group PowerLogger{
+    entry PowerLogger(int);
+  };
+};
+
+mainmodule jacobi2d {
+	extern module PowerLog;
+
+  readonly CProxy_Main mainProxy;
+  readonly int array_height;
+  readonly int array_width;
+  readonly int block_height;
+  readonly int block_width;
+  readonly int num_chare_rows;
+  readonly int num_chare_cols;
+
+  mainchare Main {
+    entry Main(CkArgMsg *m);
+//    entry void report(int, int);
+		entry void report(CkReductionMsg *m);
+  };
+
+  array [2D] Jacobi {
+    // Normal Charm++ entry methods
+    entry Jacobi(void);
+    entry void begin_iteration(void);
+    entry void ghostsFromLeft(int width, double s[width]);
+    entry void ghostsFromRight(int width, double s[width]);
+    entry void ghostsFromTop(int width, double s[width]);
+    entry void ghostsFromBottom(int width, double s[width]);
+
+    // A method for requesting data to be displayed graphically to the user
+  };
+};

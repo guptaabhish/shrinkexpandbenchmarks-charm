@@ -1,0 +1,277 @@
+[28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]profiling: run
+running on 20 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374556916.0 1374557330.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374557359.0 1374557695.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374557724.0 1374558041.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374558070.0 1374558358.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374558386.0 1374558663.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374558692.0 1374558947.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374558975.0 1374559220.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374559249.0 1374559485.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374559514.0 1374559746.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374559775.0 1374560001.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374560030.0 1374560246.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374560275.0 1374560492.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374560520.0 1374560727.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374560756.0 1374560961.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374560990.0 1374561201.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374561230.0 1374561439.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p120 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374561468.0 1374561681.0
+running on 16 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374561707.0 1374562264.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374562291.0 1374562705.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374562731.0 1374563110.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374563136.0 1374563496.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374563522.0 1374563864.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374563890.0 1374564205.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374564232.0 1374564529.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374564555.0 1374564842.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374564868.0 1374565153.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374565179.0 1374565456.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374565482.0 1374565743.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374565769.0 1374566033.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374566060.0 1374566308.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374566334.0 1374566580.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374566606.0 1374566861.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374566887.0 1374567138.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p96 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374567165.0 1374567417.0
+running on 12 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374567440.0 1374568160.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374568184.0 1374568741.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374568764.0 1374569266.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374569289.0 1374569742.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374569766.0 1374570191.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374570215.0 1374570619.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374570643.0 1374571036.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374571059.0 1374571439.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374571463.0 1374571818.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374571841.0 1374572187.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374572210.0 1374572546.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374572570.0 1374572899.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374572922.0 1374573245.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374573268.0 1374573584.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374573607.0 1374573919.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374573943.0 1374574261.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p72 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374574285.0 1374574602.0
+running on 8 nodes
+profiling at pkg power=28w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374574622.0 1374575601.0
+profiling at pkg power=30w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374575622.0 1374576399.0
+profiling at pkg power=32w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374576419.0 1374577126.0
+profiling at pkg power=34w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374577147.0 1374577817.0
+profiling at pkg power=36w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374577838.0 1374578463.0
+profiling at pkg power=38w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374578484.0 1374579067.0
+profiling at pkg power=40w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374579088.0 1374579648.0
+profiling at pkg power=42w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374579669.0 1374580206.0
+profiling at pkg power=44w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374580227.0 1374580754.0
+profiling at pkg power=46w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374580774.0 1374581267.0
+profiling at pkg power=48w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374581288.0 1374581765.0
+profiling at pkg power=50w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374581786.0 1374582258.0
+profiling at pkg power=52w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374582279.0 1374582730.0
+profiling at pkg power=54w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374582751.0 1374583213.0
+profiling at pkg power=56w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374583234.0 1374583681.0
+profiling at pkg power=58w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374583701.0 1374584150.0
+profiling at pkg power=60w, dram power=80w
+changing to directory: /home/sarood1/Work/201309_PowerDC/benchmarks/amr_harsh/
+running command: ./charmrun +p48 ./advection 12 256 30000 8192 +setcpuaffinity +pemap 0-5 ++nodelist nodes40 +balancer RefineLB |tee out
+job wall times 1374584170.0 1374584615.0
