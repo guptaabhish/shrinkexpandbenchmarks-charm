@@ -1,11 +1,12 @@
-CHARMC=../../charm/bin/charmc -O3 $(OPTS)
+CHARMC=~/work/charm/bin/charmc -O3 $(OPTS)
 
-OBJS = jacobi2d.o PowerLogger.o
+OBJS = jacobi2d.o 
+
 
 all: jacobi2d
 
 jacobi2d: $(OBJS)
-	$(CHARMC) -language charm++ -module CommonLBs -o jacobi2d $(OBJS)
+	$(CHARMC) -language charm++ -module CommonLBs -lrt  -o jacobi2d $(OBJS)
 
 jacobi2d.decl.h: jacobi2d.ci
 	$(CHARMC)  jacobi2d.ci

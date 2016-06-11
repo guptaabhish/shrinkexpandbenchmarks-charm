@@ -1,5 +1,5 @@
 #include "jacobi2d.decl.h"
-#include "PowerLog.decl.h"
+//#include "PowerLog.decl.h"
 
 // See README for documentation
 
@@ -55,7 +55,7 @@ public:
         // print info
         CkPrintf("Running Jacobi on %d processors with (%d,%d) elements\n", CkNumPes(), num_chare_rows, num_chare_cols);
 				
-				CProxy_PowerLogger pLog = CProxy_PowerLogger::ckNew(6);
+		//		CProxy_PowerLogger pLog = CProxy_PowerLogger::ckNew(6);
 				stTime = CmiWallTimer();
 	total_iterations = 200;
 	if (m->argc > 3) {
@@ -68,12 +68,36 @@ public:
         // save the total number of worker chares we have in this simulation
         num_chares = num_chare_rows*num_chare_cols;
 
+ //Register realloc callback
+        CkCallback cb(CkIndex_Hello::SayHi(),helloProxy);
+        CkRegisterCheckpointCallback(cb);
 
         //Start the computation
         startTime = CkWallTimer();
         recieve_count = 0;
         array.begin_iteration();
     }
+
+  Main(CkMigrateMessage *m) : CBase_Main(m) { 
+    if (m!=NULL) {
+      CkArgMsg *args = (CkArgMsg *)m;
+      CkPrintf("Received %d arguments: { ",args->argc);
+      for (int i=0; i<args->argc; ++i) {
+        CkPrintf("|%s| ",args->argv[i]);
+      }
+      CkPrintf("}\n");
+    } else {
+      CkPrintf("Arguments null\n");
+    }
+      // subtle: Chare proxy readonly needs to be updated manually because of
+      // the object pointer inside it.
+    mainProxy = thisProxy;
+ 
+ CkPrintf("Resuming Jacobi on %d processors with (%d,%d) elements\n", CkNumPes(), num_chare_rows, num_chare_cols);
+
+    CkPrintf("Main's MigCtor\n");
+  }
+
 
     // Each worker reports back to here when it completes an iteration
 //    void report(int row, int col) {
@@ -104,6 +128,19 @@ public:
             }
         }
     }
+void pup(PUP::er &p){
+    CBase_Main::pup(p);
+    p|recieve_count;
+    p|array;
+    p|num_chares;
+    p|iterations;
+    p|total_iterations;
+    p|stTime;
+    p|startTime;
+    CkPrintf("Main's PUPer. ",a,&a,b[0],b,b[1]);
+  }
+
+
 };
 
 class Jacobi: public CBase_Jacobi {
@@ -218,7 +255,7 @@ void ResumeFromSync() {begin_iteration();}
 
     void ghostsFromLeft(int width, double ghost_values[]) {
         for(int i=0;i<width;++i){
-            temperature[i+1][0] = ghost_values[i];
+            temperature[i+1][0] = ghshrinkexpandbenchmarksost_values[i];
         }
         check_and_compute();
     }

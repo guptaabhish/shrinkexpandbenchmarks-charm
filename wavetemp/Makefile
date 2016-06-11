@@ -1,9 +1,9 @@
-CHARMC=../../charm/bin/charmc $(OPTS) -O3
+CHARMC=~/work/charm/bin/charmc $(OPTS) -O3
 #CHARMC = $(HOME)/fault/charm/net-linux-x86_64-syncft/bin/charmc -O3 $(OPTS)
 #CHARMC = $(HOME)/fault/charm/net-linux-x86_64/bin/charmc -O3 $(OPTS)
 #CHARMC=/home/tarek/sarood1/Work/Power/charm/bin/charmc $(OPTS)
 
-OBJS = wave2d.o PowerLogger.o
+OBJS = wave2d.o 
 
 all: wave2d
 
@@ -12,7 +12,7 @@ wave2d: $(OBJS)
 #	$(CHARMC) -language charm++ -o wave2d.refine -balancer TempAwareRefineLB $(OBJS)
 #	$(CHARMC) -language charm++ -o wave2d.refine -balancer TempAwareCommLB $(OBJS)
 #	$(CHARMC) -language charm++ -o wave2d.refine -balancer RefineLB $(OBJS)
-	$(CHARMC) -language charm++ -o wave2d.greedy -module CommonLBs  $(OBJS)
+	$(CHARMC) -language charm++ -o wave2d.greedy -module CommonLBs -lrt  $(OBJS)
 #	$(CHARMC) -language charm++ -o wave2d.refine -balancer CommAwareRefineLB $(OBJS)
 #	$(CHARMC) -language charm++ -o wave2d.refine -balancer TempAwareRefineLB -tracemode projections $(OBJS)
 

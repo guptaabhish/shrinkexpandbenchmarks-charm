@@ -1,6 +1,6 @@
 //#include "liveViz.h"
 #include "wave2d.decl.h"
-#include "PowerLog.decl.h"
+//#include "PowerLog.decl.h"
 //#include "PowerLogger.h"
 //
 /*
@@ -179,7 +179,11 @@ CProxy_MyBlockMap myMap=CProxy_MyBlockMap::ckNew();
 */
     arrayProxy = CProxy_Wave::ckNew(chareArrayWidth, chareArrayHeight);
 
-		CProxy_PowerLogger pLog = CProxy_PowerLogger::ckNew(6);
+ //Register realloc callback
+       // CkCallback cb(CkIndex_Wave::begin_iteration,arrayProxy);
+	CkCallback cb(CkIndex_Main::afterCkpt(),thisProxy);
+        CkRegisterCheckpointCallback(cb);
+	//	CProxy_PowerLogger pLog = CProxy_PowerLogger::ckNew(6);
 
     // setup liveviz
  //   CkCallback c(CkIndex_Wave::requestNextFrame(0),arrayProxy);
@@ -191,6 +195,41 @@ startT=lastItr=CkWallTimer();
     //CkStartQD(CkCallback(CkCallback::ckExit));
   }
 
+ Main(CkMigrateMessage *m) : CBase_Main(m) { 
+
+
+    if (m!=NULL) {
+      CkArgMsg *args = (CkArgMsg *)m;
+      CkPrintf("Received %d arguments: { ",args->argc);
+      for (int i=0; i<args->argc; ++i) {
+        CkPrintf("|%s| ",args->argv[i]);
+      }
+      CkPrintf("}\n");
+    } else {
+      CkPrintf("Arguments null\n");
+    }
+      // subtle: Chare proxy readonly needs to be updated manually because of
+      // the object pointer inside it.
+    mainProxy = thisProxy;
+ CkPrintf("Running wave2d on grid (%d,%d) chare array (%d,%d) with %d processors ckpt_period_time:%f ckpt:%d\n",TotalDataWidth,TotalDataHeight,chareArrayWidth,chareArrayHeight, CkNumPes(),ckpt_period_time,ckpt);
+
+    CkPrintf("Main's MigCtor\n");
+  }
+
+
+void pup(PUP::er &p){
+    CBase_Main::pup(p);
+    p|lbTime;
+    p|useful_work;
+    p|iteration;
+    p|lastT;
+    p|count;
+    p|startT; p|lastItr;
+    p|ckpt_period;
+    p| lastckpt;
+    p|lbItrs;
+    CkPrintf("Main's PUPer. \n");
+  }
 
 
   // Each worker calls this method
@@ -597,7 +636,7 @@ delete [] pressure_new;
   }
   */
 };
-
+/*
 class MyBlockMap : public CkArrayMap
      {
       public:
@@ -619,5 +658,5 @@ class MyBlockMap : public CkArrayMap
     }
 
      };
-
+*/
 #include "wave2d.def.h"

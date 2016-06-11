@@ -1,12 +1,5 @@
-module PowerLog{
-  group PowerLogger{
-    entry PowerLogger(int);
-  };
-};
-
 
 mainmodule llCharm {
-	extern module PowerLog;
 
   readonly CProxy_Main mainProxy;
   readonly int elemDimX;

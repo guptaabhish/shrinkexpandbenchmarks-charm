@@ -282,8 +282,14 @@ Main::Main(CkArgMsg *msg) {
   // Timing Code
   startSimTime = CmiWallTimer();
   // Initialize the domains and set reduction client
+
+
   domains = CProxy_Domain::ckNew(chareDimX,chareDimY,chareDimZ);
-	CProxy_PowerLogger pLog = CProxy_PowerLogger::ckNew(6);
+//	CProxy_PowerLogger pLog = CProxy_PowerLogger::ckNew(6);
+
+ //Register realloc callback
+        CkCallback cb(CkIndex_Domain::ResumeFromSync(),domains);
+        CkRegisterCheckpointCallback(cb);
 
 
   CkStartQD(CkCallback(CkIndex_Domain::sendNodalMass(), domains));
@@ -381,6 +387,21 @@ void Main::report(CkReductionMsg *m){
 
 
 Main::Main(CkMigrateMessage *msg): CBase_Main(msg) {
+  mainProxy = thisProxy;
+
+  // Display of some basic information
+  // Elements breakdown
+  // Chares breakdown [number of chares per processor]
+  CkPrintf("Resuming after Restart Lulesh (Charm++)\n"
+           "  Elements: %d (%d x %d x %d)\n"
+           "  Chares: %d [%.2g] (%d x %d x %d)\n",
+           elemDimX*elemDimY*elemDimZ,
+           elemDimX, elemDimY, elemDimZ,
+           chareDimX*chareDimY*chareDimZ, charesPerPE,
+           chareDimX, chareDimY, chareDimZ);
+
+
+
   delete msg;
 }
 
